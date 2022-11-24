@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body class="page__body">
+    <header class="page__header site-header">
+      <nav class="main-navigation">
+        <div class="main-navigation__logo--outer">
+          <a href="index.html">
+            <img class="logo-img" src="img/sedona-logo.svg" width="185" height="96" alt="Логотип отеля Седона." >
+          </a>
+        </div>
+        <button class="main-navigation__toggle"><span class="visually-hidden">Открыть меню</span></button>
+        <div class="main-navigation__navigation-menu navigation-menu">
+          <ul class="navigation-menu__list">
+            <li class="navigation-menu__item navigation-menu__item">
+              <a class="navigation-menu__link" href="index.html">Главная</a>
+            </li>
+            <li class="navigation-menu__item">
+              <a class="navigation-menu__link navigation-menu__link--current" href="catalog.html">Фото и видео</a>
+            </li>
+            <li class="navigation-menu__item navigation-menu__item--logo">
+              <a class="navigation-menu__logo--inner" href="index.html">
+                <img src="img/sedona-logo.svg" width="185" height="96" alt="Логотип отеля Седона." class="logo-img">
+              </a>
+            </li>
+            <li class="navigation-menu__item">
+              <a class="navigation-menu__link" href="form.html">Форма отзыва</a>
+            </li>
+            <li class="navigation-menu__item">
+              <a class="navigation-menu__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+
+    <main class="page__main catalog-main">
+      <h1 class="visually-hidden">Фото и видео Седоны</h1>
+
+      <section class="catalog-main__banner banner-small">
+        <h2 class="visually-hidden">Баннер Седона</h2>
+        <img class="banner-small__img" src="img/sedona-banner-small.svg" alt="Баннер Седоны." width="229" height="39">
+      </section>
+
+      <section class="catalog-main__heading heading-block">
+        <h2 class="heading-block__head">Фото и видео</h2>
+        <p class="heading-block__heading-text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+      </section>
+
+      <section class="catalog-main__photo-video photo-video-block">
+        <h2 class="visually-hidden">Фото и воидеогалерея</h2>
+
+        <div class="photo-video-block__photo-gallery photo-gallery">
+
+          <div class="photo-video-block__photo photo-block">
+            <img class="photo-block__image" src="img/road-mobile.jpg" alt="Дорога на фоне аризонской природы" width="280" height="280">
+            <div class="photo-block__info-wrapper">
+              <div class="photo-block__head-wrapper">
+                <h3 class="photo-block__heading">Неродные просторы</h3>
+                <p class="photo-block__author">Автор фото: Борис</p>
+              </div>
+              <p class="photo-block__likes-count">1350</p>
+            </div>
+          </div>
+
+          <div class="photo-video-block__photo photo-block">
+
+            <img class="photo-block__image" src="img/cactus-mobile.jpg" alt="Аризонский кактус" width="280" height="280">
+            <div class="photo-block__info-wrapper">
+              <div class="photo-block__head-wrapper">
+                <h3 class="photo-block__heading">Местная растительность</h3>
+                <p class="photo-block__author">Автор фото: Сергей</p>
+              </div>
+              <p class="photo-block__likes-count">143</p>
+            </div>
+          </div>
+
+          <div class="photo-video-block__photo photo-block">
+
+            <img class="photo-block__image" src="img/roadtonorth-mobile.jpg" alt="Дорога на фоне зеленого леса" width="280" height="280">
+            <div class="photo-block__info-wrapper">
+              <div class="photo-block__head-wrapper">
+                <h3 class="photo-block__heading">Дорога на север</h3>
+                <p class="photo-block__author">Автор фото: Пётр</p>
+              </div>
+              <p class="photo-block__likes-count">96</p>
+            </div>
+          </div>
+
+          <div class="photo-video-block__photo photo-block">
+
+            <img class="photo-block__image" src="img/devilbridge-mobile.jpg" alt="Мост Дьявола" width="280" height="280">
+            <div class="photo-block__info-wrapper">
+              <div class="photo-block__head-wrapper">
+                <h3 class="photo-block__heading">Мост Дьявола</h3>
+                <p class="photo-block__author">Автор фото: Антон</p>
+              </div>
+              <p class="photo-block__likes-count">254</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="photo-video-block__video-gallery">
+
+          <div class="photo-video-block__video video-block">
+            <h3 class="visually-hidden">Видеопрезентация Седоны</h3>
+            <p class="video-block__heading">Все еще сомневаетесь?</p>
+            <p class="video-block__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+            <img class="video-block__video" src="img/video-mobile.jpg" alt="Дорога на седону" width="280" height="177">
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+
+
+    <footer class="page__footer site-footer">
+      <div class="site-footer__hashtag-link-wrapper">
+        <a href="#" class="site-footer__hashtag-link">#visitSedona</a>
+      </div>
+
+      <div class="site-footer__social-links social-block">
+        <ul class="social-block__list">
+          <li class="social-block__item">
+            <a href="#" class="social-block__link">Vkontakte</a>
+          </li>
+          <li class="social-block__item">
+            <a href="#" class="social-block__link">Telegram</a>
+          </li>
+          <li class="social-block__item">
+            <a href="#" class="social-block__link">Youtube</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="site-footer__developer-link">
+        <a href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
+      </div>
+    </footer>
+
+
+
+  </body>
+</html>
