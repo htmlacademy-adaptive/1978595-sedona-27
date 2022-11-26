@@ -9,12 +9,16 @@
   <body class="page__body">
     <header class="page__header site-header">
       <nav class="main-navigation">
-        <div class="main-navigation__logo--outer">
+
+        <!-- Этот логотип для мобильной версии -->
+        <div class="main-navigation__logo main-navigation__logo--outer">
           <a href="index.html">
             <img class="logo-img" src="img/sedona-logo.svg" width="185" height="96" alt="Логотип отеля Седона." >
           </a>
         </div>
+
         <button class="main-navigation__toggle"><span class="visually-hidden">Открыть меню</span></button>
+
         <div class="main-navigation__navigation-menu navigation-menu">
           <ul class="navigation-menu__list">
             <li class="navigation-menu__item navigation-menu__item">
@@ -24,7 +28,7 @@
               <a class="navigation-menu__link" href="catalog.html">Фото и видео</a>
             </li>
             <li class="navigation-menu__item navigation-menu__item--logo">
-              <a class="navigation-menu__logo--inner" href="index.html">
+              <a class="main-navigation__logo navigation-menu__logo--inner" href="index.html">
                 <img src="img/sedona-logo.svg" width="185" height="96" alt="Логотип отеля Седона." class="logo-img">
               </a>
             </li>
@@ -106,12 +110,12 @@
 
               <div class="feedback-form__radio-wrapper">
                 <input type="radio" name="impression" id="imp-neg" value="negative">
-                <label class="feedback-form__label-radio" for="imp-pos">Скорее отрицательное</label>
+                <label class="feedback-form__label-radio" for="imp-neg">Скорее отрицательное</label>
               </div>
 
               <div class="feedback-form__radio-wrapper">
                 <input type="radio" name="impression" id="imp-ntr" value="neutral">
-                <label class="feedback-form__label-radio" for="imp-pos">Затрудняюсь ответить</label>
+                <label class="feedback-form__label-radio" for="imp-ntr">Затрудняюсь ответить</label>
               </div>
 
             </fieldset>
