@@ -12,7 +12,7 @@
   box-sizing: border-box;
   width: 320px;
   min-height: 55px;
-  background-color: #81b3d2;
+  background-color: $blue;
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -21,7 +21,7 @@
   align-items: center;
   text-align: center;
   text-transform: uppercase;
-  color: #ffffff;
+  color: $white;
   box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
 }
 
@@ -52,7 +52,7 @@
 // }
 
 .navigation-menu__link {
-  color: #ffffff;
+  color: $white;
   display: block;
   width: 320px;
   padding-bottom: 12px;
@@ -61,17 +61,17 @@
 }
 
 .navigation-menu__link:hover {
-  color: #ffffff;
+  color: $white;
   background-color: #669ec0;
 }
 
 .navigation-menu__link:active {
-  color: #ffffff;
+  color: $white;
   opacity: 0.3;
   background-color: #5496bd;
 }
 // .navigation-menu__link:visited {
-//   color: #ffffff;
+//   color: $white;
 // }
 
 
@@ -89,7 +89,7 @@
     border: none;
     box-shadow: none;
     width: 153px;
-    background-color: #ffffff;
+    background-color: $white;
   }
 
   .navigation-menu__item:first-child {
@@ -114,29 +114,29 @@
     font-size: 14px;
     line-height: 21px;
     text-transform: uppercase;
-    color: #000000;
+    color: $black;
     box-sizing: border-box;
     width: auto;
     height: auto;
   }
 
   .navigation-menu__link:hover {
-    color: #81b3d2;
-    background-color: #ffffff;
+    color: $blue;
+    background-color: $white;
   }
 
   .navigation-menu__link:active {
-    color: #000000;
+    color: $black;
     opacity: 0.3;
-    background-color: #ffffff;
+    background-color: $white;
   }
 
   .navigation-menu__link--current {
-    color: #766357;
+    color: $brown;
   }
 
   // .navigation-menu__link:visited {
-  //   color: #000000;
+  //   color: $black;
   // }
 
   .navigation-menu__logo-inner {
@@ -159,7 +159,7 @@
     border: none;
     box-shadow: none;
     width: 240px;
-    background-color: #ffffff;
+    background-color: $white;
   }
 
   .navigation-menu__item:first-child {
@@ -184,29 +184,29 @@
     font-size: 14px;
     line-height: 21px;
     text-transform: uppercase;
-    color: #000000;
+    color: $black;
     box-sizing: border-box;
     width: auto;
     height: auto;
   }
 
   .navigation-menu__link:hover {
-    color: #81b3d2;
-    background-color: #ffffff;
+    color: $blue;
+    background-color: $white;
   }
 
   .navigation-menu__link:active {
-    color: #000000;
+    color: $black;
     opacity: 0.3;
-    background-color: #ffffff;
+    background-color: $white;
   }
 
   .navigation-menu__link--current {
-    color: #766357;
+    color: $brown;
   }
 
   // .navigation-menu__link:visited {
-  //   color: #000000;
+  //   color: $black;
   // }
 
   .navigation-menu__logo-inner {

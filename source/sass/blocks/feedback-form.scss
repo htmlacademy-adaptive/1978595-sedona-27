@@ -54,7 +54,7 @@
 .feedback-form__text-input {
   width: 280px;
   min-height: 58px;
-  background-color: #f2f2f2;
+  background-color: $dark-white;
   border: none;
 }
 
@@ -65,7 +65,7 @@
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
-  color: #333333;
+  color: $dark-brown;
 }
 
 .feedback-form__label-radio {
@@ -90,8 +90,8 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  color: rgba(0, 0, 0, 0.3);
-  background: #f2f2f2;
+  color: $black-op3;
+  background: $dark-white;
   border: none;
   resize: none;
 }
@@ -107,8 +107,8 @@
   font-size: 21px;
   line-height: 26px;
   text-transform: uppercase;
-  color: #ffffff;
-  background-color: #81b3d2;
+  color: $white;
+  background-color: $blue;
 }
 
 .feedback-form__warning {

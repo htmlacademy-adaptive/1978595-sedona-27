@@ -85,7 +85,7 @@
     align-items: center;
     position: absolute;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: $black-op3;
   }
 
   .photo-block__image {
@@ -93,15 +93,15 @@
   }
 
   .photo-block__heading {
-    color: #ffffff;
+    color: $white;
   }
 
   .photo-block__author {
-    color: #ffffff;
+    color: $white;
   }
 
   .photo-block__likes-count {
-    color: #ffffff;
+    color: $white;
   }
 
   .photo-block:first-of-type {

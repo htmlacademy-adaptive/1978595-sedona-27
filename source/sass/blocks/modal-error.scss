@@ -23,19 +23,19 @@
   line-height: 21px;
   text-transform: uppercase;
   text-align: center;
-  color: #333333;
+  color: $dark-brown;
 }
 
 .modal-error__button {
   width: 180px;
   min-height: 58px;
-  background: #81b3d2;
+  background: $blue;
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  color: #ffffff;
+  color: $white;
   border: none;
   text-transform: uppercase;
   margin: 0 auto;
