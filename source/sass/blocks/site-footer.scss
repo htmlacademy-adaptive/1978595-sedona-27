@@ -1,0 +1,42 @@
+.site-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.site-footer__hashtag-link {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+}
+
+.site-footer__developer-link {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+  .site-footer {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: 1280px) {
+  .site-footer {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}

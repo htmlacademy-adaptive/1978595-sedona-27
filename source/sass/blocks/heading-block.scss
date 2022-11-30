@@ -1,0 +1,48 @@
+.heading-block {
+  min-width: 280px;
+  margin: 32px auto 16px auto;
+  text-align: center;
+}
+
+.heading-block__head {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 35px;
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.heading-block__heading-text {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 32px;
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  color: #333333;
+  text-transform: uppercase;
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+  .heading-block {
+    max-width: 520px;
+    margin: 48px auto 55px auto;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1280px) {
+  .heading-block {
+    max-width: 520px;
+    margin: 59px auto 44px auto;
+    text-align: center;
+  }
+}

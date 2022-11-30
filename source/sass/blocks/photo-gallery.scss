@@ -1,0 +1,22 @@
+.photo-gallery {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+  .photo-gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1280px) {
+  .photo-gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+}
