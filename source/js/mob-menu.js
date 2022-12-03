@@ -9,4 +9,3 @@ function toggleMenu() {
   }
 }
 menubutton.addEventListener('click', toggleMenu);
-
