@@ -1,0 +1,42 @@
+.modal-error {
+  min-width: 320px;
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-error__heading {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.modal-error__text {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  text-align: center;
+  color: $dark-brown;
+}
+
+.modal-error__button {
+  width: 180px;
+  min-height: 58px;
+  background: $blue;
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: $white;
+  border: none;
+  text-transform: uppercase;
+  margin: 0 auto;
+}

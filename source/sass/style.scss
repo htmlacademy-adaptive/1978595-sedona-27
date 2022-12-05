@@ -1,1 +1,32 @@
-// Начните писать стили здесь
+$dark-white: #f2f2f2;
+$white: #ffffff;
+$blue: #81b3d2;
+$dark-brown: #333333;
+$grey: #eeeeee;
+$brown: #766357;
+$black: #000000;
+$black-op3: rgba(0, 0, 0, 0.3);
+
+@import "./blocks/page.scss";
+@import "./blocks/index-main.scss";
+@import "./blocks/main-navigation.scss";
+@import "./blocks/navigation-menu.scss";
+@import "./blocks/sedona-banner.scss";
+@import "./blocks/heading-block.scss";
+@import "./blocks/site-footer.scss";
+@import "./blocks/social-block.scss";
+@import "./blocks/advantages-block.scss";
+@import "./blocks/advantage-brick.scss";
+@import "./blocks/advantage-brick-inner.scss";
+@import "./blocks/advantages-block-inner.scss";
+@import "./blocks/search-invite.scss";
+@import "./blocks/banner-small.scss";
+@import "./blocks/feedback-form.scss";
+@import "./blocks/photo-block.scss";
+@import "./blocks/video-block.scss";
+@import "./blocks/modal-container.scss";
+@import "./blocks/modal-success.scss";
+@import "./blocks/modal-error.scss";
+@import "./blocks/photo-video-block.scss";
+@import "./blocks/photo-gallery.scss";
+@import "./blocks/sedona-map.scss";

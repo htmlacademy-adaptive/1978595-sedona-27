@@ -1,0 +1,47 @@
+.modal-success {
+  min-width: 320px;
+  min-height: 323px;
+}
+
+.modal-success__heading {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.modal-success__text {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  text-align: center;
+  color: $dark-brown;
+}
+
+.modal-success__button-wrapper {
+  display: flex;
+  width: 100%;
+  height: 98px;
+  background: $dark-white;
+}
+
+.modal-success__button {
+  width: 280px;
+  min-height: 58px;
+  background: $blue;
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: $white;
+  border: none;
+  text-transform: uppercase;
+  margin: auto;
+}

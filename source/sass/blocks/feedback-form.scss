@@ -1,0 +1,167 @@
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.feedback-form__fieldset {
+  min-width: 280px;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 34px;
+}
+
+.feedback-form__fieldset-legend {
+  margin: 0 auto;
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.feedback-form__fieldset-wrapper {
+  border-top: 1px solid #e5e5e5;
+  padding-top: 24px;
+}
+
+.feedback-form__input__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+}
+
+.feedback-form__radio-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  gap: 16px;
+}
+
+.feedback-form__checkbox-wrapper {
+  min-width: 280px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  gap: 16px;
+}
+
+.feedback-form__text-input {
+  width: 280px;
+  min-height: 58px;
+  background-color: $dark-white;
+  border: none;
+}
+
+.feedback-form__label {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: $dark-brown;
+}
+
+.feedback-form__label-radio {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.feedback-form__label-checkbox {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.feedback-form__textarea-input {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: $black-op3;
+  background: $dark-white;
+  border: none;
+  resize: none;
+}
+
+.feedback-form__submit-button {
+  width: 281px;
+  min-height: 58px;
+  margin: 0 auto;
+  border: none;
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: $white;
+  background-color: $blue;
+}
+
+.feedback-form__warning {
+  margin: 0;
+  margin-right: 20px;
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 21px;
+  align-self: flex-end;
+  text-transform: uppercase;
+}
+
+
+// @media (min-width: 768px) and (max-width: 1279px) {
+//   .feedback-form {
+//     display: flex;
+//     flex-direction: row;
+//     flex-wrap: wrap;
+//   }
+
+//   .feedback-form__input-wrapper {
+//     display: flex;
+//     flex-direction: column;
+//   }
+
+//   .feedback-form__fieldset-wrapper--half-width {
+//     width: 50%;
+//   }
+
+//   .feedback-form__fieldset-wrapper--full-width {
+//     width: 100%;
+//   }
+// }
+
+// @media (min-width: 1280px) {
+//   .feedback-form {
+//     display: flex;
+//     flex-direction: row;
+//     flex-wrap: wrap;
+//   }
+
+//   .feedback-form__input-wrapper {
+//     display: flex;
+//     flex-direction: column;
+//   }
+
+//   .feedback-form__fieldset-wrapper--half-width {
+//     width: 50%;
+//   }
+
+//   .feedback-form__fieldset-wrapper--full-width {
+//     width: 100%;
+//   }
+// }

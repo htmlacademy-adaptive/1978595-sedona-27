@@ -1,0 +1,84 @@
+.advantage-brick {
+  width: 289px;
+  padding: 39px 16px 35px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.advantage-brick__heading {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+.advantage-brick__number {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: $dark-brown;
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+.advantage-brick__description {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: $dark-brown;
+  margin: 0;
+}
+
+.advantage-brick--white-text {
+  color: $white;
+}
+
+.advantage-brick--white-text .advantage-brick__number {
+  color: $white;
+}
+
+.advantage-brick--white-text .advantage-brick__description {
+  color: $white;
+}
+
+.advantage-brick--image {
+  width: 320px;
+  min-height: 260px;
+}
+
+// @media (min-width: 768px) and (max-width: 1279px) {
+//   .advantage-brick {
+//     width: 192px;
+//     min-height: 172px;
+//   }
+
+//   .advantage-brick--image {
+//     width: 512px;
+//     min-height: 256px;
+//   }
+// }
+
+// @media (min-width: 1280px) {
+//   .advantage-brick {
+//     width: 295px;
+//     min-height: 153px;
+//   }
+
+//   .advantage-brick--image {
+//     width: 800px;
+//     min-height: 256px;
+//   }
+// }
