@@ -12,32 +12,32 @@
 }
 
 
-// @media (min-width: 768px) and (max-width: 1279px) {
-//   .sedona-banner {
-//     background-image: url("../img/banner-back-desktop.jpg");
-//     background-color: $black;
-//     background-position: center bottom;
-//   }
+@media (min-width: 768px) and (max-width: 1279px) {
+  .sedona-banner {
+    background-image: url("../img/banner-back-desktop.jpg");
+    background-color: $black;
+    background-position: center bottom;
+  }
 
-//   .sedona-banner__image {
-//     width: 461px;
-//     height: 350px;
-//     padding-top: 77px;
-//     padding-bottom: 91px;
-//   }
-// }
+  .sedona-banner__image {
+    width: 461px;
+    height: 350px;
+    padding-top: 77px;
+    padding-bottom: 91px;
+  }
+}
 
-// @media (min-width: 1280px) {
-//   .sedona-banner {
-//     background-image: url("../img/banner-back-desktop.jpg");
-//     background-color: $black;
-//     background-position: center bottom;
-//   }
+@media (min-width: 1280px) {
+  .sedona-banner {
+    background-image: url("../img/banner-back-desktop.jpg");
+    background-color: $black;
+    background-position: center bottom;
+  }
 
-//   .sedona-banner__image {
-//     width: 461px;
-//     height: 350px;
-//     padding-top: 77px;
-//     padding-bottom: 91px;
-//   }
-// }
+  .sedona-banner__image {
+    width: 461px;
+    height: 350px;
+    padding-top: 77px;
+    padding-bottom: 91px;
+  }
+}

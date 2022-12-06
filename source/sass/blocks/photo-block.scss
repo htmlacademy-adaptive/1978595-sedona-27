@@ -43,68 +43,68 @@
 }
 
 
-// @media (min-width: 768px) and (max-width: 1279px) {
-//   .photo-block {
-//     display: flex;
-//     flex-direction: column;
-//     flex-wrap: wrap;
-//     width: 50%;
-//     margin: 0;
-//     border: none;
-//     padding: 0;
-//   }
+@media (min-width: 768px) and (max-width: 1279px) {
+  .photo-block {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 50%;
+    margin: 0;
+    border: none;
+    padding: 0;
+  }
 
-//   .photo-block__info-wrapper {
-//     display: flex;
-//     flex-direction: row;
-//     justify-content: space-between;
-//     align-items: center;
-//   }
+  .photo-block__info-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-//   .photo-block:first-of-type {
-//     width: 100%;
-//   }
-// }
+  .photo-block:first-of-type {
+    width: 100%;
+  }
+}
 
-// @media (min-width: 1280px) {
-//   .photo-block {
-//     display: flex;
-//     flex-direction: column;
-//     flex-wrap: wrap;
-//     width: 33.33%;
-//     position: relative;
-//     margin: 0;
-//     border: none;
-//     padding: 0;
-//   }
+@media (min-width: 1280px) {
+  .photo-block {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 33.33%;
+    position: relative;
+    margin: 0;
+    border: none;
+    padding: 0;
+  }
 
-//   .photo-block__info-wrapper {
-//     display: flex;
-//     flex-direction: row;
-//     justify-content: space-between;
-//     align-items: center;
-//     position: absolute;
-//     bottom: 0;
-//     background-color: $black-op3;
-//   }
+  .photo-block__info-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    background-color: $black-op3;
+  }
 
-//   .photo-block__image {
-//     padding: 0;
-//   }
+  .photo-block__image {
+    padding: 0;
+  }
 
-//   .photo-block__heading {
-//     color: $white;
-//   }
+  .photo-block__heading {
+    color: $white;
+  }
 
-//   .photo-block__author {
-//     color: $white;
-//   }
+  .photo-block__author {
+    color: $white;
+  }
 
-//   .photo-block__likes-count {
-//     color: $white;
-//   }
+  .photo-block__likes-count {
+    color: $white;
+  }
 
-//   .photo-block:first-of-type {
-//     width: 100%;
-//   }
-// }
+  .photo-block:first-of-type {
+    width: 100%;
+  }
+}

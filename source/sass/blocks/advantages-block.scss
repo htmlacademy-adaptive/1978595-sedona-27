@@ -11,73 +11,73 @@
   background-color: $blue;
 }
 
-// @media (min-width: 768px) and (max-width: 1279px) {
-//   .advantages-block {
-//     width: 768px;
-//   }
+@media (min-width: 768px) and (max-width: 1279px) {
+  .advantages-block {
+    width: 768px;
+  }
 
-//   .advantages-block__list {
-//     display: grid;
-//     grid-template-columns: 1fr 1fr 1fr;
-//   }
+  .advantages-block__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 
-//   .advantages-block__item {
-//     min-width: 256px;
-//     min-height: 256px;
-//   }
+  .advantages-block__item {
+    min-width: 256px;
+    min-height: 256px;
+  }
 
-//   .advantages-block__item--image {
-//     width: 512px;
-//   }
+  .advantages-block__item--image {
+    width: 512px;
+  }
 
-//   .advantages-block__item--image-1 {
-//     grid-column-start: 2;
-//     grid-column-end: 4;
-//   }
+  .advantages-block__item--image-1 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+  }
 
-//   .advantages-block__item--image-2 {
-//     grid-column-start: 1;
-//     grid-column-end: 3;
-//   }
+  .advantages-block__item--image-2 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
 
-//   .advantages-block__item--inner {
-//     grid-column-start: 1;
-//     grid-column-end: 4;
-//   }
-// }
+  .advantages-block__item--inner {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+}
 
 
-// @media (min-width: 1280px) {
-//   .advantages-block {
-//     width: 1200px;
-//   }
+@media (min-width: 1280px) {
+  .advantages-block {
+    width: 1200px;
+  }
 
-//   .advantages-block__list {
-//     display: grid;
-//     grid-template-columns: 1fr 1fr 1fr;
-//   }
+  .advantages-block__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 
-//   .advantages-block__item {
-//     min-width: 400px;
-//     min-height: 256px;
-//   }
+  .advantages-block__item {
+    min-width: 400px;
+    min-height: 256px;
+  }
 
-//   .advantages-block__item--image {
-//     width: 800px;
-//   }
+  .advantages-block__item--image {
+    width: 800px;
+  }
 
-//   .advantages-block__item--image-1 {
-//     grid-column-start: 2;
-//     grid-column-end: 4;
-//   }
+  .advantages-block__item--image-1 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+  }
 
-//   .advantages-block__item--image-2 {
-//     grid-column-start: 1;
-//     grid-column-end: 3;
-//   }
+  .advantages-block__item--image-2 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
 
-//   .advantages-block__item--inner {
-//     grid-column-start: 1;
-//     grid-column-end: 4;
-//   }
-// }
+  .advantages-block__item--inner {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+}
