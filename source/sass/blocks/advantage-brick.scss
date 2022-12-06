@@ -6,6 +6,7 @@
   justify-content: space-between;
   align-items: center;
   text-align: center;
+  margin: 0 auto;
 }
 
 .advantage-brick__heading {
@@ -69,6 +70,10 @@
     width: 512px;
     min-height: 256px;
   }
+
+  .advantage-brick__heading {
+    font-size: 21px;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -80,5 +85,9 @@
   .advantage-brick--image {
     width: 800px;
     min-height: 256px;
+  }
+
+  .advantage-brick__heading {
+    font-size: 21px;
   }
 }
