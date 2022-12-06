@@ -48,6 +48,11 @@
     width: 445px;
     margin-bottom: 66px;
   }
+
+  .video-block__video {
+    width: 648px;
+    height: 500px;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -62,5 +67,10 @@
   .video-block__description {
     width: 445px;
     margin-bottom: 66px;
+  }
+
+  .video-block__video {
+    width: 800px;
+    height: 500px;
   }
 }

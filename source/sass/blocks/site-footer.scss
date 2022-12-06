@@ -1,7 +1,10 @@
 .site-footer {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   align-items: center;
+  width: 320px;
+  min-height: 233px;
 }
 
 .site-footer__hashtag-link {
@@ -31,6 +34,9 @@
   .site-footer {
     flex-direction: row;
     justify-content: space-around;
+    width: 768px;
+    min-height: 120px;
+    margin-top: 40px;
   }
 }
 
@@ -38,5 +44,8 @@
   .site-footer {
     flex-direction: row;
     justify-content: space-around;
+    width: 1200px;
+    min-height: 120px;
+    margin-top: 40px;
   }
 }
