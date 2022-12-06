@@ -37,6 +37,10 @@
     margin: 48px auto 55px auto;
     text-align: center;
   }
+
+  .heading-block__head {
+    font-size: 21px;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -44,5 +48,9 @@
     max-width: 520px;
     margin: 59px auto 44px auto;
     text-align: center;
+  }
+
+  .heading-block__head {
+    font-size: 21px;
   }
 }

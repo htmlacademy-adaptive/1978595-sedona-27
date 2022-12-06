@@ -7,6 +7,7 @@
 
 .feedback-form__fieldset {
   min-width: 280px;
+  padding: 0;
   border: none;
   display: flex;
   justify-content: space-between;
@@ -30,7 +31,7 @@
   width: 320px;
 }
 
-.feedback-form__input__wrapper {
+.feedback-form__input-wrapper {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -59,9 +60,11 @@
   min-height: 58px;
   background-color: $dark-white;
   border: none;
+  margin: 0 auto;
 }
 
 .feedback-form__label {
+  padding-left: 36px;
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -169,7 +172,7 @@
     width: 100%;
   }
 
-  .feedback-form__button-field-wrapper {
+    .feedback-form__button-field-wrapper {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -263,6 +266,10 @@
 
   .feedback-form__fieldset--right {
     align-items: flex-end;
+  }
+
+  .feedback-form__text-input {
+    width: 430px;
   }
 
   .feedback-form__textarea-input {
