@@ -57,6 +57,7 @@
   position: relative;
   min-width: 320px;
   min-height: 56px;
+  z-index: 1;
 }
 
 .main-navigation__toggle {
@@ -64,7 +65,6 @@
   right: 16px;
   top: 17px;
   z-index: 7;
-  height: 20px;
 }
 
 .main-navigation__navigation-menu {
@@ -325,18 +325,30 @@
   background-image: url("../img/banner-back-desktop.jpg");
   background-color: #000000;
   background-position: center bottom;
+  position: relative;
 }
 
 .sedona-banner__image {
+  position: relative;
   display: block;
   margin: 0 auto;
   padding-top: 90px;
   padding-bottom: 85px;
 }
 
+.sedona-banner::after {
+  content: " ";
+  position: absolute;
+  background-image: url("/img/decore/banner-flange.svg");
+  background-position: center;
+  width: 100%;
+  height: 57px;
+  bottom: 0;
+}
+
 @media (min-width: 768px) and (max-width: 1279px) {
   .sedona-banner {
-    background-image: url("../img/banner-back-desktop.jpg");
+    background-image: url("/img/banner-back-desktop.jpg");
     background-color: #000000;
     background-position: center bottom;
   }
@@ -366,6 +378,18 @@
   min-width: 280px;
   margin: 32px auto 16px auto;
   text-align: center;
+  position: relative;
+}
+
+.heading-block--index::after {
+  content: "";
+  background-image: url("/img/decore/heading-decore.svg");
+  background-position: center;
+  position: absolute;
+  bottom: -40;
+  left: 0;
+  width: 100%;
+  height: 37px;
 }
 
 .heading-block__head {
@@ -449,6 +473,29 @@
   color: #000000;
 }
 
+.site-footer__developer-link:hover {
+  color: #81b3d2;
+}
+
+.site-footer__developer-link:active {
+  color: #b3b3b3;
+}
+
+.site-footer__developer-icon {
+  position: relative;
+  left: 8px;
+  top: 13px;
+  fill: #000000;
+}
+
+.site-footer__developer-link:hover .site-footer__developer-icon {
+  fill: #81b3d2;
+}
+
+.site-footer__developer-link:active .site-footer__developer-icon {
+  fill: #b3b3b3;
+}
+
 @media (min-width: 768px) and (max-width: 1279px) {
   .site-footer {
     flex-direction: row;
@@ -471,6 +518,37 @@
   display: flex;
   flex-direction: row;
   list-style: none;
+  gap: 6px;
+  padding: 0;
+}
+
+.social-block__item {
+  width: 48px;
+  height: 48px;
+  background-color: #81b3d2;
+}
+
+.social-block__item:hover {
+  background-color: #669ec0;
+}
+
+.social-block__item:active {
+  background-color: #5496bd;
+}
+
+.social-block__item:active .social-block__icon {
+  fill: rgba(255, 255, 255, 0.3);
+}
+
+.social-block__link {
+  display: flex;
+  width: 48px;
+  height: 48px;
+}
+
+.social-block__icon {
+  margin: auto;
+  fill: #ffffff;
 }
 
 .advantages-block__list {
@@ -885,6 +963,7 @@
   align-items: center;
   padding: 0;
   gap: 16px;
+  position: relative;
 }
 
 .feedback-form__checkbox-wrapper {
@@ -894,6 +973,7 @@
   align-items: center;
   padding: 0;
   gap: 16px;
+  position: relative;
 }
 
 .feedback-form__text-input {
@@ -902,6 +982,54 @@
   background-color: #f2f2f2;
   border: none;
   margin: 0 auto;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.feedback-form__text-input::placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.feedback-form__text-input:hover {
+  background-color: #e5e5e5;
+}
+
+.feedback-form__text-input:active {
+  background-color: #ffffff;
+  box-sizing: border-box;
+  border: 4px solid #e5e5e5;
+}
+
+.feedback-form__text-input--telephone {
+  width: 222px;
+}
+
+.feedback-form__text-input--email {
+  width: 222px;
+}
+
+.feedback-form__input-wrapper-inner {
+  display: flex;
+  gap: 0;
+  margin: 0 auto;
+}
+
+.feedback-form__text-input--telephone + .feedback-form__text-input-decore {
+  width: 58px;
+  height: 60px;
+  background-color: #e6e6e6;
+  background-image: url("/img/decore/phone.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.feedback-form__text-input--email + .feedback-form__text-input-decore {
+  width: 58px;
+  height: 60px;
+  background-color: #e6e6e6;
+  background-image: url("/img/decore/mail.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 .feedback-form__label {
@@ -913,6 +1041,72 @@
   line-height: 21px;
   text-transform: uppercase;
   color: #333333;
+}
+
+.feedback-form__radio-control-mark {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background-color: #f2f2f2;
+}
+
+.feedback-form__radio-checked-mark {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 16px;
+  height: 16px;
+  fill: #333333;
+  display: none;
+}
+
+.feedback-form__radio-wrapper:hover .feedback-form__radio-control-mark {
+  background-color: #e5e5e5;
+}
+
+.feedback-form__radio-wrapper:active .feedback-form__radio-control-mark {
+  background-color: #d5d5d5;
+}
+
+.feedback-form__radio-wrapper:active .feedback-form__radio-checked-mark {
+  fill: rgba(51, 51, 51, 0.3);
+}
+
+.feedback-form__radio-input:checked ~ .feedback-form__radio-checked-mark {
+  display: block;
+}
+
+.feedback-form__checkbox-control-mark {
+  width: 46px;
+  height: 46px;
+  border-radius: 4px;
+  background-color: #f2f2f2;
+}
+
+.feedback-form__checkbox-checked-mark {
+  position: absolute;
+  top: 15px;
+  left: 12px;
+  width: 24px;
+  height: 16px;
+  fill: #333333;
+  display: none;
+}
+
+.feedback-form__checkbox-wrapper:hover .feedback-form__checkbox-control-mark {
+  background-color: #e5e5e5;
+}
+
+.feedback-form__checkbox-wrapper:active .feedback-form__checkbox-control-mark {
+  background-color: #d5d5d5;
+}
+
+.feedback-form__checkbox-wrapper:active .feedback-form__checkbox-checked-mark {
+  fill: rgba(51, 51, 51, 0.3);
+}
+
+.feedback-form__checkbox-input:checked + .feedback-form__checkbox-checked-mark {
+  display: block;
 }
 
 .feedback-form__label-radio {
@@ -1109,6 +1303,14 @@
 
   .feedback-form__text-input {
     width: 430px;
+  }
+
+  .feedback-form__text-input--telephone {
+    width: 322px;
+  }
+
+  .feedback-form__text-input--email {
+    width: 322px;
   }
 
   .feedback-form__textarea-input {
@@ -1597,5 +1799,29 @@
     width: 1200px;
     height: 350px;
   }
+}
+.menu-toggle {
+  width: 23px;
+  height: 22px;
+  border: none;
+  padding: 0;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.menu-toggle__burger {
+  display: block;
+}
+
+.menu-toggle__cross {
+  display: none;
+}
+
+.menu-toggle__burger--invisible {
+  display: none;
+}
+
+.menu-toggle__cross--visible {
+  display: block;
 }
 /*# sourceMappingURL=style.css.map */
