@@ -4,6 +4,7 @@
   position: relative;
   min-width: 320px;
   min-height: 56px;
+  z-index: 1;
 }
 
 .main-navigation__toggle {
@@ -11,7 +12,6 @@
   right: 16px;
   top: 17px;
   z-index: 7;
-  height: 20px;
 }
 
 .main-navigation__navigation-menu {
