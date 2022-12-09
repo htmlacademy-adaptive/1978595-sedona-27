@@ -322,7 +322,7 @@
   }
 }
 .sedona-banner {
-  background-image: url("../img/banner-back-desktop.jpg");
+  background-image: url("/img/banner-back-desktop.jpg");
   background-color: #000000;
   background-position: center bottom;
   position: relative;
@@ -362,7 +362,7 @@
 }
 @media (min-width: 1280px) {
   .sedona-banner {
-    background-image: url("../img/banner-back-desktop.jpg");
+    background-image: url("/img/banner-back-desktop.jpg");
     background-color: #000000;
     background-position: center bottom;
   }
@@ -883,7 +883,7 @@
   }
 }
 .banner-small {
-  background-image: url("../img/banner-back-desktop.jpg");
+  background-image: url("/img/banner-back-desktop.jpg");
   background-color: #000000;
   background-position: center bottom;
   background-size: 902px;
@@ -1018,7 +1018,7 @@
   width: 58px;
   height: 60px;
   background-color: #e6e6e6;
-  background-image: url("../img/decore/phone.svg");
+  background-image: url("/img/decore/phone.svg");
   background-position: center center;
   background-repeat: no-repeat;
 }
@@ -1027,7 +1027,7 @@
   width: 58px;
   height: 60px;
   background-color: #e6e6e6;
-  background-image: url("../img/decore/mail.svg");
+  background-image: url("/img/decore/mail.svg");
   background-position: center center;
   background-repeat: no-repeat;
 }
