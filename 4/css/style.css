@@ -1018,7 +1018,7 @@
   width: 58px;
   height: 60px;
   background-color: #e6e6e6;
-  background-image: url("/img/decore/phone.svg");
+  background-image: url("../img/decore/phone.svg");
   background-position: center center;
   background-repeat: no-repeat;
 }
@@ -1027,7 +1027,7 @@
   width: 58px;
   height: 60px;
   background-color: #e6e6e6;
-  background-image: url("/img/decore/mail.svg");
+  background-image: url("../img/decore/mail.svg");
   background-position: center center;
   background-repeat: no-repeat;
 }
