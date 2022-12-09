@@ -44,6 +44,7 @@
   align-items: center;
   padding: 0;
   gap: 16px;
+  position: relative;
 }
 
 .feedback-form__checkbox-wrapper {
@@ -53,6 +54,7 @@
   align-items: center;
   padding: 0;
   gap: 16px;
+  position: relative;
 }
 
 .feedback-form__text-input {
@@ -76,7 +78,7 @@
 .feedback-form__text-input:active {
   background-color: #ffffff;
   box-sizing: border-box;
-  border: 4px solid #E5E5E5;
+  border: 4px solid #e5e5e5;
 }
 
 .feedback-form__text-input--telephone {
@@ -122,10 +124,6 @@
   color: $dark-brown;
 }
 
-.feedback-form__radio-wrapper {
-  position: relative;
-}
-
 .feedback-form__radio-control-mark {
   width: 46px;
   height: 46px;
@@ -138,8 +136,8 @@
   top: 15px;
   left: 15px;
   width: 16px;
-  height:16px;
-  fill:#333333;
+  height: 16px;
+  fill: #333333;
   display: none;
 }
 
@@ -147,19 +145,16 @@
   background-color: #e5e5e5;
 }
 
-.feedback-form__radio-wrapper:active .feedback-form__radio-control-mark{
+.feedback-form__radio-wrapper:active .feedback-form__radio-control-mark {
   background-color: #d5d5d5;
 }
 
 .feedback-form__radio-wrapper:active .feedback-form__radio-checked-mark {
   fill: rgba(51, 51, 51, 0.3);
 }
-.feedback-form__radio-input:checked ~ .feedback-form__radio-checked-mark  {
-  display: block;
-}
 
-.feedback-form__checkbox-wrapper {
-  position: relative;
+.feedback-form__radio-input:checked ~ .feedback-form__radio-checked-mark {
+  display: block;
 }
 
 .feedback-form__checkbox-control-mark {
@@ -174,7 +169,7 @@
   top: 15px;
   left: 12px;
   width: 24px;
-  height:16px;
+  height: 16px;
   fill: #333333;
   display: none;
 }
@@ -183,7 +178,7 @@
   background-color: #e5e5e5;
 }
 
-.feedback-form__checkbox-wrapper:active .feedback-form__checkbox-control-mark{
+.feedback-form__checkbox-wrapper:active .feedback-form__checkbox-control-mark {
   background-color: #d5d5d5;
 }
 
@@ -191,7 +186,7 @@
   fill: rgba(51, 51, 51, 0.3);
 }
 
-.feedback-form__checkbox-input:checked + .feedback-form__checkbox-checked-mark  {
+.feedback-form__checkbox-input:checked + .feedback-form__checkbox-checked-mark {
   display: block;
 }
 
