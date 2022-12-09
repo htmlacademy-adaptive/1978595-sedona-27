@@ -1,5 +1,5 @@
 .sedona-banner {
-  background-image: url("../img/banner-back-desktop.jpg");
+  background-image: url("/img/banner-back-desktop.jpg");
   background-color: $black;
   background-position: center bottom;
   position: relative;
@@ -40,7 +40,7 @@
 
 @media (min-width: 1280px) {
   .sedona-banner {
-    background-image: url("../img/banner-back-desktop.jpg");
+    background-image: url("/img/banner-back-desktop.jpg");
     background-color: $black;
     background-position: center bottom;
   }
