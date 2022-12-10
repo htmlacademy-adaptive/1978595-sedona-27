@@ -1,8 +1,11 @@
 .modal-error {
-  min-width: 320px;
+  width: 320px;
   min-height: 280px;
   display: flex;
   flex-direction: column;
+  position: relative;
+  margin: auto;
+  background-color: $white;
 }
 
 .modal-error__heading {
@@ -13,6 +16,8 @@
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
+  width: 237px;
+  margin: 45px auto auto auto;
 }
 
 .modal-error__text {
@@ -24,6 +29,8 @@
   text-transform: uppercase;
   text-align: center;
   color: $dark-brown;
+  width: 237px;
+  margin: 0 auto 3px auto;
 }
 
 .modal-error__button {
@@ -39,4 +46,56 @@
   border: none;
   text-transform: uppercase;
   margin: 0 auto;
+  margin-top: auto;
+  margin-bottom: 25px;
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+  .modal-error {
+    width: 400px;
+    min-height: 347px;
+  }
+
+  .modal-error__heading {
+    width: 307px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .modal-error__text {
+    width: 307px;
+  }
+
+  .modal-error__button {
+    width: 250px;
+    min-height: 58px;
+    margin-top: auto;
+    margin-bottom: 49px;
+    font-size: 21px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .modal-error {
+    width: 400px;
+    min-height: 347px;
+  }
+
+  .modal-error__heading {
+    width: 307px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .modal-error__text {
+    width: 307px;
+  }
+
+  .modal-error__button {
+    width: 250px;
+    min-height: 58px;
+    margin-top: auto;
+    margin-bottom: 49px;
+    font-size: 21px;
+  }
 }

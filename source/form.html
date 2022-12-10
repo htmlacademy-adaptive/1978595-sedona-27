@@ -17,7 +17,18 @@
           </a>
         </div>
 
-        <button class="main-navigation__toggle"><span class="visually-hidden">Открыть меню</span></button>
+        <button class="main-navigation__toggle menu-toggle">
+          <span class="visually-hidden">Открыть меню</span>
+          <svg class="menu-toggle__burger" width="23" height="22" aria-hidden="true">
+            <rect width="23" height="4" x="0" y="0" fill="#81B3D2" />
+            <rect width="23" height="4" x="0" y="9" fill="#81B3D2" />
+            <rect width="23" height="4" x="0" y="18" fill="#81B3D2" />
+          </svg>
+          <svg class="menu-toggle__cross" width="23" height="22" aria-hidden="true">
+            <line x1="1" y1="1" x2="22" y2="21" stroke="#ffffff" stroke-width="3" />
+            <line x1="1" y1="21" x2="22" y2="1" stroke="#ffffff" stroke-width="3" />
+          </svg>
+        </button>
 
         <div class="main-navigation__navigation-menu navigation-menu">
           <ul class="navigation-menu__list">
@@ -56,13 +67,18 @@
         <p class="heading-block__heading-text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       </section>
 
+      <!-- Кнопки для отладки -->
+      <p>Временнные кнопки для модальных окон</p>
+      <button class="showerror-debug">ShowError</button>
+      <button class="showsuccess-debug">ShowSuccess</button>
+
       <section class="form-main__feedback feedback-block">
         <h2 class="visually-hidden">Форма обратной связи</h2>
 
         <form action="https://echo.htmlacademy.ru/" method="POST" class="feedback-block__form feedback-form">
 
           <div class="feedback-form__fieldset-wrapper feedback-form__fieldset-wrapper--half-width">
-            <fieldset class="feedback-form__fieldset">
+            <fieldset class="feedback-form__fieldset feedback-form__fieldset--left">
               <legend class="feedback-form__fieldset-legend">Представьтесь:</legend>
 
               <div class="feedback-form__input-wrapper">
@@ -83,17 +99,23 @@
           </div>
 
           <div class="feedback-form__fieldset-wrapper feedback-form__fieldset-wrapper--half-width">
-            <fieldset class="feedback-form__fieldset">
+            <fieldset class="feedback-form__fieldset feedback-form__fieldset--right">
               <legend class="feedback-form__fieldset-legend">Контактная информация:</legend>
 
               <div class="feedback-form__input-wrapper">
                 <label class="feedback-form__label feedback-form__label--tel " for="tlf">Контактный телефон*:</label>
-                <input class="feedback-form__text-input feedback-form__text-input--telephone" type="tel" name="telephone" id="tlf">
+                <div class="feedback-form__input-wrapper-inner">
+                  <input class="feedback-form__text-input feedback-form__text-input--telephone" type="tel" name="telephone" id="tlf">
+                  <div class="feedback-form__text-input-decore"></div>
+                </div>
               </div>
 
               <div class="feedback-form__input-wrapper">
                 <label class="feedback-form__label feedback-form__label--email" for="email">Электронная почта*:</label>
-                <input class="feedback-form__text-input feedback-form__text-input--email" type="email" id="email" name="email">
+                <div class="feedback-form__input-wrapper-inner">
+                  <input class="feedback-form__text-input feedback-form__text-input--email" type="email" id="email" name="email">
+                  <div class="feedback-form__text-input-decore"></div>
+                </div>
               </div>
             </fieldset>
           </div>
@@ -104,17 +126,29 @@
               <legend class="feedback-form__fieldset-legend">Ваше общее впечатление:</legend>
 
               <div class="feedback-form__radio-wrapper">
-                <input type="radio" name="impression" id="imp-pos" value="positive">
+                <input class="visually-hidden feedback-form__radio-input" type="radio" name="impression" id="imp-pos" value="positive">
+                <svg class="feedback-form__radio-checked-mark" viewBox="0 0 16 16">
+                  <circle cx="50%" cy="50%" r="8" />
+                </svg>
+                <span class="feedback-form__radio-control-mark"></span>
                 <label class="feedback-form__label-radio" for="imp-pos">Скорее положительное</label>
               </div>
 
               <div class="feedback-form__radio-wrapper">
-                <input type="radio" name="impression" id="imp-neg" value="negative">
+                <input class="visually-hidden feedback-form__radio-input" type="radio" name="impression" id="imp-neg" value="negative">
+                <svg class="feedback-form__radio-checked-mark" viewBox="0 0 16 16">
+                  <circle cx="50%" cy="50%" r="8" />
+                </svg>
+                <span class="feedback-form__radio-control-mark"></span>
                 <label class="feedback-form__label-radio" for="imp-neg">Скорее отрицательное</label>
               </div>
 
               <div class="feedback-form__radio-wrapper">
-                <input type="radio" name="impression" id="imp-ntr" value="neutral">
+                <input class="visually-hidden feedback-form__radio-input" type="radio" name="impression" id="imp-ntr" value="neutral">
+                <svg class="feedback-form__radio-checked-mark" viewBox="0 0 16 16">
+                  <circle cx="50%" cy="50%" r="8" />
+                </svg>
+                <span class="feedback-form__radio-control-mark"></span>
                 <label class="feedback-form__label-radio" for="imp-ntr">Затрудняюсь ответить</label>
               </div>
 
@@ -126,22 +160,38 @@
               <legend class="feedback-form__fieldset-legend">Посещенные достопримечательности:</legend>
 
               <div class="feedback-form__checkbox-wrapper">
-                <input type="checkbox" name="showplaces" id="devil-bridge" value="devil-bridge" checked>
+                <input class="visually-hidden feedback-form__checkbox-input" type="checkbox" name="showplaces" id="devil-bridge" value="devil-bridge" checked>
+                <svg class="feedback-form__checkbox-checked-mark" viewBox="0 0 22 16">
+                  <path d="M21.8053 1.30662L20.759 0.22188C20.4736 -0.0739599 19.9029 -0.0739599 19.6176 0.22188L8.29884 11.9569L2.40167 5.84283C2.11633 5.54699 1.54563 5.54699 1.26028 5.84283L0.21401 6.92758C-0.0713367 7.22342 -0.0713367 7.8151 0.21401 8.11094L7.63303 15.8028C7.82326 16 8.01349 16 8.20373 16C8.39396 16 8.58419 15.9014 8.77442 15.8028L21.615 2.48999C22.0906 2.19415 22.0906 1.70108 21.8053 1.30662Z" />
+                </svg>
+                <span class="feedback-form__checkbox-control-mark"></span>
                 <label class="feedback-form__label-checkbox" for="devil-bridge">Мост Дьявола</label>
               </div>
 
               <div class="feedback-form__checkbox-wrapper">
-                <input type="checkbox" name="showplaces" id="bell-mount" value="bell-mountain" checked>
+                <input class="visually-hidden feedback-form__checkbox-input" type="checkbox" name="showplaces" id="bell-mount" value="bell-mountain" checked>
+                <svg class="feedback-form__checkbox-checked-mark" viewBox="0 0 22 16">
+                  <path d="M21.8053 1.30662L20.759 0.22188C20.4736 -0.0739599 19.9029 -0.0739599 19.6176 0.22188L8.29884 11.9569L2.40167 5.84283C2.11633 5.54699 1.54563 5.54699 1.26028 5.84283L0.21401 6.92758C-0.0713367 7.22342 -0.0713367 7.8151 0.21401 8.11094L7.63303 15.8028C7.82326 16 8.01349 16 8.20373 16C8.39396 16 8.58419 15.9014 8.77442 15.8028L21.615 2.48999C22.0906 2.19415 22.0906 1.70108 21.8053 1.30662Z" />
+                </svg>
+                <span class="feedback-form__checkbox-control-mark"></span>
                 <label class="feedback-form__label-checkbox" for="bell-mount">Гора-Колокол</label>
               </div>
 
               <div class="feedback-form__checkbox-wrapper">
-                <input type="checkbox" name="showplaces" id="slide" value="slide-park" checked>
+                <input class="visually-hidden feedback-form__checkbox-input" type="checkbox" name="showplaces" id="slide" value="slide-park" checked>
+                <svg class="feedback-form__checkbox-checked-mark" viewBox="0 0 22 16">
+                  <path d="M21.8053 1.30662L20.759 0.22188C20.4736 -0.0739599 19.9029 -0.0739599 19.6176 0.22188L8.29884 11.9569L2.40167 5.84283C2.11633 5.54699 1.54563 5.54699 1.26028 5.84283L0.21401 6.92758C-0.0713367 7.22342 -0.0713367 7.8151 0.21401 8.11094L7.63303 15.8028C7.82326 16 8.01349 16 8.20373 16C8.39396 16 8.58419 15.9014 8.77442 15.8028L21.615 2.48999C22.0906 2.19415 22.0906 1.70108 21.8053 1.30662Z" />
+                </svg>
+                <span class="feedback-form__checkbox-control-mark"></span>
                 <label class="feedback-form__label-checkbox" for="slide">Слайд-парк</label>
               </div>
 
               <div class="feedback-form__checkbox-wrapper">
-                <input type="checkbox" name="showplaces" id="red-rocks" value="red-rocks">
+                <input class="visually-hidden feedback-form__checkbox-input" type="checkbox" name="showplaces" id="red-rocks" value="red-rocks">
+                <svg class="feedback-form__checkbox-checked-mark" viewBox="0 0 22 16">
+                  <path d="M21.8053 1.30662L20.759 0.22188C20.4736 -0.0739599 19.9029 -0.0739599 19.6176 0.22188L8.29884 11.9569L2.40167 5.84283C2.11633 5.54699 1.54563 5.54699 1.26028 5.84283L0.21401 6.92758C-0.0713367 7.22342 -0.0713367 7.8151 0.21401 8.11094L7.63303 15.8028C7.82326 16 8.01349 16 8.20373 16C8.39396 16 8.58419 15.9014 8.77442 15.8028L21.615 2.48999C22.0906 2.19415 22.0906 1.70108 21.8053 1.30662Z" />
+                </svg>
+                <span class="feedback-form__checkbox-control-mark"></span>
                 <label class="feedback-form__label-checkbox" for="red-rocks">Красные скалы</label>
               </div>
 
@@ -156,8 +206,10 @@
             </fieldset>
           </div>
 
-          <input class="feedback-form__submit-button" type="submit" value="Отправить отзыв">
-          <p class="feedback-form__warning">* — обязательные поля</p>
+          <div class="feedback-form__button-field-wrapper">
+            <input class="feedback-form__submit-button" type="submit" value="Отправить отзыв">
+            <p class="feedback-form__warning">* — обязательные поля</p>
+          </div>
 
         </form>
       </section>
@@ -171,19 +223,38 @@
       <div class="site-footer__social-links social-block">
         <ul class="social-block__list">
           <li class="social-block__item">
-            <a href="#" class="social-block__link">Vkontakte</a>
+            <a href="#" class="social-block__link">
+              <span class="visually-hidden">Vkontakte</span>
+              <svg class="social-block__icon" width="24" height="14" viewBox="0 0 24 14"  xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M23.45 0.948C23.616 0.402 23.45 0 22.655 0H20.03C19.362 0 19.054 0.347 18.887 0.73C18.887 0.73 17.552 3.926 15.661 6.002C15.049 6.604 14.771 6.795 14.437 6.795C14.27 6.795 14.019 6.604 14.019 6.057V0.948C14.019 0.292 13.835 0 13.279 0H9.151C8.734 0 8.483 0.304 8.483 0.593C8.483 1.214 9.429 1.358 9.526 3.106V6.904C9.526 7.737 9.373 7.888 9.039 7.888C8.149 7.888 5.984 4.677 4.699 1.003C4.45 0.288 4.198 0 3.527 0H0.9C0.15 0 0 0.347 0 0.73C0 1.412 0.89 4.8 4.145 9.281C6.315 12.341 9.37 14 12.153 14C13.822 14 14.028 13.632 14.028 12.997V10.684C14.028 9.947 14.186 9.8 14.715 9.8C15.105 9.8 15.772 9.992 17.33 11.467C19.11 13.216 19.403 14 20.405 14H23.03C23.78 14 24.156 13.632 23.94 12.904C23.702 12.18 22.852 11.129 21.725 9.882C21.113 9.172 20.195 8.407 19.916 8.024C19.527 7.533 19.638 7.314 19.916 6.877C19.916 6.877 23.116 2.451 23.449 0.948H23.45Z" />
+              </svg>
+            </a>
           </li>
           <li class="social-block__item">
-            <a href="#" class="social-block__link">Telegram</a>
+            <a href="#" class="social-block__link">
+              <span class="visually-hidden">Telegram</span>
+              <svg class="social-block__icon" width="22" height="18" viewBox="0 0 22 18"  xmlns="http://www.w3.org/2000/svg">
+                <path d="M21.4393 1.62225L18.2705 16.566C18.0313 17.6205 17.408 17.883 16.5223 17.3865L11.6938 13.8285L9.36425 16.0695C9.10626 16.3275 8.891 16.5428 8.39375 16.5428L8.741 11.6258L17.6893 3.54C18.0785 3.1935 17.6045 3.00075 17.0848 3.348L6.02225 10.314L1.25976 8.823C0.224006 8.49975 0.205256 7.78725 1.47576 7.29L20.1035 0.113253C20.966 -0.209997 21.7205 0.305253 21.4393 1.623V1.62225Z" />
+              </svg>
+            </a>
           </li>
           <li class="social-block__item">
-            <a href="#" class="social-block__link">Youtube</a>
+            <a href="#" class="social-block__link">
+              <span class="visually-hidden">Youtube</span>
+              <svg class="social-block__icon" width="20" height="14" viewBox="0 0 20 14"  xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.1813 0H2.81331C1.30618 0 0 1.3 0 2.8V11.1C0 12.7 1.30618 14 2.81331 14H17.1813C18.7889 14 19.9946 12.7 19.9946 11.2V2.8C20.095 1.3 18.7889 0 17.1813 0ZM7.03326 10.4V3.6L13.8656 7L7.03326 10.4Z" />
+              </svg>
+            </a>
           </li>
         </ul>
       </div>
 
-      <div class="site-footer__developer-link">
-        <a href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
+      <div class="site-footer__developer-link-wrapper">
+        <a class="site-footer__developer-link" href="https://htmlacademy.ru/intensive/adaptive">Разработано
+          <svg class="site-footer__developer-icon" width="27" height="35" viewBox="0 0 27 35" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z" />
+          </svg>
+        </a>
       </div>
     </footer>
 
@@ -210,5 +281,7 @@
     </div>
 
   <script src="./js/mob-menu.js"></script>
+  <script src="./js/mod-error-opener.js"></script>
+  <script src="./js/mod-success-opener.js"></script>
   </body>
 </html>
