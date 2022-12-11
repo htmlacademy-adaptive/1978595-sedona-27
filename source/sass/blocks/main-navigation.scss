@@ -21,8 +21,21 @@
   display: none;
 }
 
+.main-navigation__navigation-menu--no-js {
+  position: static;
+  display: block;
+}
+
+.main-navigation__navigation-menu--no-js ~ .main-navigation__toggle {
+  display: none;
+}
+
 .main-navigation__navigation-menu--open {
   display: block;
+}
+
+.main-navigation__navigation-menu--open .navigation-menu__item--logo{
+  display: none;
 }
 
 .main-navigation__logo--outer {

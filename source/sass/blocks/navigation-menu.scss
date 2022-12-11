@@ -6,6 +6,8 @@
   list-style: none;
   padding: 0;
   margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .navigation-menu__item {
@@ -26,7 +28,9 @@
 }
 
 .navigation-menu__item--logo {
-  display: none;
+  display: block;
+  background-color: #ffffff;
+  order: -1;
 }
 
 .navigation-menu__item:first-child {

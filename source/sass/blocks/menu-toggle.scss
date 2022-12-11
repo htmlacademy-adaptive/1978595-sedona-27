@@ -22,3 +22,11 @@
 .menu-toggle__cross--visible {
   display: block;
 }
+
+.menu-toggle:hover {
+  opacity: 0.6;
+}
+
+.menu-toggle:active {
+  opacity: 0.3;
+}
