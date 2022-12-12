@@ -7,6 +7,10 @@
   border-top: 1px solid #e5e5e5;
 }
 
+.photo-block__info-wrapper {
+  margin-top: 15px;
+}
+
 .photo-block__heading {
   margin: 0;
   font-family: "PT Sans", sans-serif;
@@ -29,6 +33,21 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
+}
+
+.photo-block__likes-wrapper {
+  display: flex;
+  flex-direction: row;
+  margin-top: 17px;
+  gap: 14px;
+}
+
+.photo-block__likes-button {
+  width: 23px;
+  height: 21px;
+  background-color: rgba(0,0,0,0);
+  border: none;
+  background-image: url(../img/decore/like-icon.svg);
 }
 
 .photo-block__likes-count {

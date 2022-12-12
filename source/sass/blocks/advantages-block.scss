@@ -7,6 +7,10 @@
   background-color: $grey;
 }
 
+.advantages-block__item:first-of-type {
+  min-height: 215px;
+}
+
 .advantages-block__item--blue-background {
   background-color: $blue;
 }

@@ -3,6 +3,19 @@
   padding: 0;
   background-color: $white;
   min-height: 331px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;
+  margin-bottom: 51px;
+  gap: 22px;
+}
+
+.advantages-block-inner__item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+  width: 320px;
 }
 
 @media (min-width: 768px) and (max-width: 1279px) {
@@ -13,6 +26,10 @@
     flex-direction: row;
     justify-content: stretch;
   }
+
+  .advantages-block-inner__item {
+    width: 256px;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -20,5 +37,9 @@
     display: flex;
     flex-direction: row;
     justify-content: stretch;
+  }
+
+  .advantages-block-inner__item {
+    width: 400px;
   }
 }
