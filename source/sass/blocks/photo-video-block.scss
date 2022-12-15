@@ -1,3 +1,15 @@
 .photo-video-block {
   display: block;
 }
+
+@media (min-width: 768px) and (max-width: 1279px) {
+  .photo-video-block {
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .photo-video-block {
+    margin-bottom: 82px;
+  }
+}

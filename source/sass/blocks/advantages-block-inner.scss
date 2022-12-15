@@ -1,13 +1,13 @@
 .advantages-block-inner {
   list-style: none;
   padding: 0;
-  background-color: $white;
   min-height: 331px;
   display: flex;
   flex-direction: column;
   margin-top: 24px;
   margin-bottom: 51px;
   gap: 22px;
+  background-color: #ffffff;
 }
 
 .advantages-block-inner__item {
@@ -25,10 +25,12 @@
     display: flex;
     flex-direction: row;
     justify-content: stretch;
+    margin: 0;
   }
 
   .advantages-block-inner__item {
     width: 256px;
+    min-height: 311px;
   }
 }
 
@@ -37,6 +39,7 @@
     display: flex;
     flex-direction: row;
     justify-content: stretch;
+    margin: 0;
   }
 
   .advantages-block-inner__item {

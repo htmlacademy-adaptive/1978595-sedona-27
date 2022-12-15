@@ -88,7 +88,7 @@
   min-height: 260px;
 }
 
-.advantage-brick--image img{
+.advantage-brick--image img {
   display: block;
 }
 
@@ -106,6 +106,14 @@
   .advantage-brick__heading {
     font-size: 21px;
   }
+
+  .advantage-brick--borders::after {
+    display: none;
+  }
+
+  .advantage-brick--borders::before {
+    display: none;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -121,5 +129,13 @@
 
   .advantage-brick__heading {
     font-size: 21px;
+  }
+
+  .advantage-brick--borders::after {
+    display: none;
+  }
+
+  .advantage-brick--borders::before {
+    display: none;
   }
 }

@@ -7,10 +7,10 @@
   width: 237px;
   background-color: $white;
   position: relative;
-  margin: 0px 0px 0 59px;
+  margin: 0 0 0 59px;
 }
 
-.advantage-brick-inner__text-wrapper{
+.advantage-brick-inner__text-wrapper {
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -34,17 +34,17 @@
 
 .advantage-brick-inner--decore-house::before {
   content: "";
-  background-image: url(../img/decore/house.svg);
+  background-image: url("../img/decore/house.svg");
 }
 
 .advantage-brick-inner--decore-burger::before {
   content: "";
-  background-image: url(../img/decore/burger.svg);
+  background-image: url("../img/decore/burger.svg");
 }
 
 .advantage-brick-inner--decore-present::before {
   content: "";
-  background-image: url(../img/decore/present.svg);
+  background-image: url("../img/decore/present.svg");
 }
 
 .advantage-brick-inner__heading {
@@ -65,7 +65,7 @@
   line-height: 21px;
   text-transform: uppercase;
   color: $dark-brown;
-  margin: 0px;
+  margin: 0;
   padding-left: 5px;
 }
 
@@ -133,10 +133,6 @@
   }
 
   .advantage-brick-inner__description {
-    text-align: center;
-  }
-
-  .advantage-brick-inner__text-wrapper {
     text-align: center;
   }
 }
