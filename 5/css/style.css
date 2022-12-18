@@ -350,10 +350,16 @@
   }
 }
 .sedona-banner {
-  background-image: url("../img/banner-back-mobile.jpg");
+  background-image: url("../img/back-mobile.jpg");
   background-color: #000000;
   background-position: center bottom;
   position: relative;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  .sedona-banner {
+    background-image: url("../img/back-mobile@2x.jpg");
+    background-size: 320px 389px;
+  }
 }
 
 .sedona-banner__image {
@@ -376,11 +382,18 @@
 
 @media (min-width: 768px) and (max-width: 1279px) {
   .sedona-banner {
-    background-image: url("../img/banner-back-desktop.jpg");
+    background-image: url("../img/back-tablet.jpg");
     background-color: #000000;
     background-position: center bottom;
   }
-
+}
+@media (min-width: 768px) and (max-width: 1279px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (max-width: 1279px) and (min-resolution: 2dppx) {
+  .sedona-banner {
+    background-image: url("../img/back-tablet@2x.jpg");
+    background-size: 768px 518px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1279px) {
   .sedona-banner__image {
     width: 461px;
     height: 350px;
@@ -390,11 +403,18 @@
 }
 @media (min-width: 1280px) {
   .sedona-banner {
-    background-image: url("../img/banner-back-desktop.jpg");
+    background-image: url("../img/back-desktop.jpg");
     background-color: #000000;
     background-position: center bottom;
   }
-
+}
+@media (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1280px) and (min-resolution: 2dppx) {
+  .sedona-banner {
+    background-image: url("../img/back-desktop@2x.jpg");
+    background-size: 1200px 518px;
+  }
+}
+@media (min-width: 1280px) {
   .sedona-banner__image {
     width: 461px;
     height: 350px;
@@ -1126,7 +1146,7 @@
   }
 }
 .banner-small {
-  background-image: url("../img/banner-back-desktop.jpg");
+  background-image: url("../img/back-desktop.jpg");
   background-color: #000000;
   background-position: center bottom;
   background-size: 902px;
@@ -1878,6 +1898,10 @@
   margin-top: 8px;
 }
 
+.video-block__wrapper {
+  position: relative;
+}
+
 .video-block__video {
   padding-left: 20px;
   padding-right: 20px;
@@ -1887,8 +1911,8 @@
 
 .video-block__play-icon {
   position: absolute;
-  top: 1px;
-  right: 1px;
+  top: 60px;
+  left: 130px;
 }
 
 @media (min-width: 768px) and (max-width: 1279px) {
@@ -1910,6 +1934,11 @@
     width: 648px;
     height: 500px;
   }
+
+  .video-block__play-icon {
+    top: 210px;
+    left: 310px;
+  }
 }
 @media (min-width: 1280px) {
   .video-block {
@@ -1929,6 +1958,11 @@
   .video-block__video {
     width: 800px;
     height: 500px;
+  }
+
+  .video-block__play-icon {
+    top: 200px;
+    left: 420px;
   }
 }
 .modal-container {
