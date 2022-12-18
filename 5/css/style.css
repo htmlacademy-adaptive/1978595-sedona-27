@@ -115,6 +115,10 @@
   .main-navigation__logo--outer {
     display: none;
   }
+
+  .main-navigation__navigation-menu--open .navigation-menu__item--logo {
+    display: block;
+  }
 }
 @media (min-width: 1280px) {
   .main-navigation {
@@ -133,6 +137,10 @@
 
   .main-navigation__logo--outer {
     display: none;
+  }
+
+  .main-navigation__navigation-menu--open .navigation-menu__item--logo {
+    display: block;
   }
 }
 .navigation-menu {

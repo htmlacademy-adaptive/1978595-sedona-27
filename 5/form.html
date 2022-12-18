@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
+    <link rel="icon" href="favicon.ico">
+    <!-- <link rel="icon" href="img/favicons/favicon-32.svg" type="image/svg+xml"> -->
     <link rel="stylesheet" href="css/style.css">
     <base href="https://htmlacademy-adaptive.github.io/1978595-sedona-27/5/">
 </head>
@@ -19,7 +21,7 @@
         </div>
 
 
-
+        <!-- меню с js открывается добавлением класса main-navigation__navigation-menu--open -->
         <div class="main-navigation__navigation-menu main-navigation__navigation-menu--no-js navigation-menu ">
           <ul class="navigation-menu__list">
             <li class="navigation-menu__item navigation-menu__item">
@@ -44,11 +46,15 @@
 
         <button class="main-navigation__toggle menu-toggle">
           <span class="visually-hidden">Открыть меню</span>
+
+          <!-- класс menu-toggle__burger--invisible скрывает иконку-бургер -->
           <svg class="menu-toggle__burger" width="23" height="22" aria-hidden="true">
             <rect width="23" height="4" x="0" y="0" fill="#81B3D2" />
             <rect width="23" height="4" x="0" y="9" fill="#81B3D2" />
             <rect width="23" height="4" x="0" y="18" fill="#81B3D2" />
           </svg>
+
+          <!-- класс menu-toggle__cross--visible делает видимым иконку-крест-->
           <svg class="menu-toggle__cross" width="23" height="22" aria-hidden="true">
             <line x1="1" y1="1" x2="22" y2="21" stroke="#ffffff" stroke-width="3" />
             <line x1="1" y1="21" x2="22" y2="1" stroke="#ffffff" stroke-width="3" />
@@ -268,6 +274,8 @@
       </div>
     </footer>
 
+
+    <!-- класс modal-container--open открываает модальное окно -->
     <div class="modal-container">
 
       <div class="modal-error">
