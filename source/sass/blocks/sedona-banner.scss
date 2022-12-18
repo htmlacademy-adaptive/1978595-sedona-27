@@ -3,6 +3,7 @@
   background-color: $black;
   background-position: center bottom;
   position: relative;
+
   @media (min-resolution: 2dppx) {
     background-image: url("../img/back-mobile@2x.jpg");
     background-size: 320px 389px;
@@ -32,6 +33,7 @@
     background-image: url("../img/back-tablet.jpg");
     background-color: $black;
     background-position: center bottom;
+
     @media (min-resolution: 2dppx) {
       background-image: url("../img/back-tablet@2x.jpg");
       background-size: 768px 518px;
@@ -51,6 +53,7 @@
     background-image: url("../img/back-desktop.jpg");
     background-color: $black;
     background-position: center bottom;
+
     @media (min-resolution: 2dppx) {
       background-image: url("../img/back-desktop@2x.jpg");
       background-size: 1200px 518px;
