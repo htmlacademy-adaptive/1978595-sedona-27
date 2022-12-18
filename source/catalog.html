@@ -170,12 +170,17 @@
             <h3 class="visually-hidden">Видеопрезентация Седоны</h3>
             <p class="video-block__heading">Все еще сомневаетесь?</p>
             <p class="video-block__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-            <img class="video-block__video" src="img/video-mobile.jpg" alt="Дорога на седону" width="280" height="177">
 
-            <!-- Треугольник вставим потом в тэг picture
-            <svg class="video-block__play-icon" width="48" height="54" viewBox="0 0 48 54" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M48 27L0 54L2.42273e-06 0L48 27Z" fill="white" fill-opacity="0.7"/>
-            </svg> -->
+            <div class="video-block__wrapper">
+              <picture>
+                <source media="(min-width: 1280px)" srcset="img/video-desktop.jpg 1x, img/video-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px) and (max-width: 1279px)" srcset="img/video-tablet.jpg 1x, img/video-tablet@2x.jpg 2x">
+                <img class="video-block__video" src="img/video-mobile.jpg" alt="Дорога на седону" width="280" height="177" srcset="img/video-mobile@2x.jpg 2x">
+              </picture>
+              <svg class="video-block__play-icon" width="48" height="54" viewBox="0 0 48 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M48 27L0 54L2.42273e-06 0L48 27Z" fill="white" fill-opacity="0.7"/>
+              </svg>
+            </div>
 
           </div>
         </div>
