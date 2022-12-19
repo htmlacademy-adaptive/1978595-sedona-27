@@ -1,12 +1,40 @@
 .advantage-brick {
   width: 289px;
-  padding: 39px 16px 35px 15px;
+  padding-top: 24px;
+  padding-bottom: 24px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   text-align: center;
   margin: 0 auto;
+}
+
+.advantage-brick--first {
+  padding-top: 57px;
+}
+
+.advantage-brick--blue {
+  padding-top: 41px;
+  padding-bottom: 31px;
+}
+
+.advantage-brick--borders::after {
+  content: "";
+  width: 284px;
+  height: 1px;
+  background: #d6d6d6;
+  position: relative;
+  top: 21px;
+}
+
+.advantage-brick--borders::before {
+  content: "";
+  width: 284px;
+  height: 1px;
+  background: #d6d6d6;
+  position: relative;
+  top: -25px;
 }
 
 .advantage-brick__heading {
@@ -60,6 +88,10 @@
   min-height: 260px;
 }
 
+.advantage-brick--image img {
+  display: block;
+}
+
 @media (min-width: 768px) and (max-width: 1279px) {
   .advantage-brick {
     width: 192px;
@@ -73,6 +105,14 @@
 
   .advantage-brick__heading {
     font-size: 21px;
+  }
+
+  .advantage-brick--borders::after {
+    display: none;
+  }
+
+  .advantage-brick--borders::before {
+    display: none;
   }
 }
 
@@ -89,5 +129,13 @@
 
   .advantage-brick__heading {
     font-size: 21px;
+  }
+
+  .advantage-brick--borders::after {
+    display: none;
+  }
+
+  .advantage-brick--borders::before {
+    display: none;
   }
 }

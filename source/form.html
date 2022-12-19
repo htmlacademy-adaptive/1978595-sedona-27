@@ -4,6 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/favicon-32.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="images/favicons/favicon-152.svg" type="image/svg+xml">
+    <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
@@ -17,20 +21,9 @@
           </a>
         </div>
 
-        <button class="main-navigation__toggle menu-toggle">
-          <span class="visually-hidden">Открыть меню</span>
-          <svg class="menu-toggle__burger" width="23" height="22" aria-hidden="true">
-            <rect width="23" height="4" x="0" y="0" fill="#81B3D2" />
-            <rect width="23" height="4" x="0" y="9" fill="#81B3D2" />
-            <rect width="23" height="4" x="0" y="18" fill="#81B3D2" />
-          </svg>
-          <svg class="menu-toggle__cross" width="23" height="22" aria-hidden="true">
-            <line x1="1" y1="1" x2="22" y2="21" stroke="#ffffff" stroke-width="3" />
-            <line x1="1" y1="21" x2="22" y2="1" stroke="#ffffff" stroke-width="3" />
-          </svg>
-        </button>
 
-        <div class="main-navigation__navigation-menu navigation-menu">
+        <!-- меню с js открывается добавлением класса main-navigation__navigation-menu--open -->
+        <div class="main-navigation__navigation-menu main-navigation__navigation-menu--no-js navigation-menu ">
           <ul class="navigation-menu__list">
             <li class="navigation-menu__item navigation-menu__item">
               <a class="navigation-menu__link" href="index.html">Главная</a>
@@ -51,6 +44,23 @@
             </li>
           </ul>
         </div>
+
+        <button class="main-navigation__toggle menu-toggle">
+          <span class="visually-hidden">Открыть меню</span>
+
+          <!-- класс menu-toggle__burger--invisible скрывает иконку-бургер -->
+          <svg class="menu-toggle__burger" width="23" height="22" aria-hidden="true">
+            <rect width="23" height="4" x="0" y="0" fill="#81B3D2" />
+            <rect width="23" height="4" x="0" y="9" fill="#81B3D2" />
+            <rect width="23" height="4" x="0" y="18" fill="#81B3D2" />
+          </svg>
+
+          <!-- класс menu-toggle__cross--visible делает видимым иконку-крест-->
+          <svg class="menu-toggle__cross" width="23" height="22" aria-hidden="true">
+            <line x1="1" y1="1" x2="22" y2="21" stroke="#ffffff" stroke-width="3" />
+            <line x1="1" y1="21" x2="22" y2="1" stroke="#ffffff" stroke-width="3" />
+          </svg>
+        </button>
       </nav>
     </header>
 
@@ -68,9 +78,9 @@
       </section>
 
       <!-- Кнопки для отладки -->
-      <p>Временнные кнопки для модальных окон</p>
+      <!-- <p>Временнные кнопки для модальных окон</p>
       <button class="showerror-debug">ShowError</button>
-      <button class="showsuccess-debug">ShowSuccess</button>
+      <button class="showsuccess-debug">ShowSuccess</button> -->
 
       <section class="form-main__feedback feedback-block">
         <h2 class="visually-hidden">Форма обратной связи</h2>
@@ -83,17 +93,17 @@
 
               <div class="feedback-form__input-wrapper">
                 <label class="feedback-form__label" for="name">Имя*</label>
-                <input class="feedback-form__text-input" type="text" id="name" name="name">
+                <input class="feedback-form__text-input" type="text" id="name" name="name" placeholder="Имя">
               </div>
 
               <div class="feedback-form__input-wrapper">
                 <label class="feedback-form__label" for="sirname">Фамилия*</label>
-                <input class="feedback-form__text-input" type="text" id="sirname" name="sirname">
+                <input class="feedback-form__text-input" type="text" id="sirname" name="sirname" placeholder="Фамилия">
               </div>
 
               <div class="feedback-form__input-wrapper">
                 <label class="feedback-form__label" for="patronimic">Отчество</label>
-                <input class="feedback-form__text-input" type="text" id="patronimic" name="patronimic-name">
+                <input class="feedback-form__text-input" type="text" id="patronimic" name="patronimic-name" placeholder="Отчество">
               </div>
             </fieldset>
           </div>
@@ -105,7 +115,7 @@
               <div class="feedback-form__input-wrapper">
                 <label class="feedback-form__label feedback-form__label--tel " for="tlf">Контактный телефон*:</label>
                 <div class="feedback-form__input-wrapper-inner">
-                  <input class="feedback-form__text-input feedback-form__text-input--telephone" type="tel" name="telephone" id="tlf">
+                  <input class="feedback-form__text-input feedback-form__text-input--telephone" type="tel" name="telephone" id="tlf" placeholder="Введите телефон">
                   <div class="feedback-form__text-input-decore"></div>
                 </div>
               </div>
@@ -113,7 +123,7 @@
               <div class="feedback-form__input-wrapper">
                 <label class="feedback-form__label feedback-form__label--email" for="email">Электронная почта*:</label>
                 <div class="feedback-form__input-wrapper-inner">
-                  <input class="feedback-form__text-input feedback-form__text-input--email" type="email" id="email" name="email">
+                  <input class="feedback-form__text-input feedback-form__text-input--email" type="email" id="email" name="email" placeholder="Введите e-mail">
                   <div class="feedback-form__text-input-decore"></div>
                 </div>
               </div>
@@ -122,77 +132,84 @@
 
 
           <div class="feedback-form__fieldset-wrapper feedback-form__fieldset-wrapper--full-width">
-            <fieldset class="feedback-form__fieldset">
-              <legend class="feedback-form__fieldset-legend">Ваше общее впечатление:</legend>
+            <fieldset class="feedback-form__fieldset feedback-form__fieldset--radio">
+              <legend class="feedback-form__fieldset-legend feedback-form__fieldset-legend--decore">Ваше общее впечатление:</legend>
 
               <div class="feedback-form__radio-wrapper">
+
                 <input class="visually-hidden feedback-form__radio-input" type="radio" name="impression" id="imp-pos" value="positive">
+                <label class="feedback-form__label-radio" for="imp-pos">
                 <svg class="feedback-form__radio-checked-mark" viewBox="0 0 16 16">
                   <circle cx="50%" cy="50%" r="8" />
                 </svg>
-                <span class="feedback-form__radio-control-mark"></span>
-                <label class="feedback-form__label-radio" for="imp-pos">Скорее положительное</label>
+                <span class="feedback-form__radio-control-mark"></span>Скорее положительное
+                </label>
               </div>
 
               <div class="feedback-form__radio-wrapper">
                 <input class="visually-hidden feedback-form__radio-input" type="radio" name="impression" id="imp-neg" value="negative">
+                <label class="feedback-form__label-radio" for="imp-neg">
                 <svg class="feedback-form__radio-checked-mark" viewBox="0 0 16 16">
                   <circle cx="50%" cy="50%" r="8" />
                 </svg>
-                <span class="feedback-form__radio-control-mark"></span>
-                <label class="feedback-form__label-radio" for="imp-neg">Скорее отрицательное</label>
+                <span class="feedback-form__radio-control-mark"></span>Скорее отрицательное</label>
               </div>
 
               <div class="feedback-form__radio-wrapper">
                 <input class="visually-hidden feedback-form__radio-input" type="radio" name="impression" id="imp-ntr" value="neutral">
+                <label class="feedback-form__label-radio" for="imp-ntr">
                 <svg class="feedback-form__radio-checked-mark" viewBox="0 0 16 16">
                   <circle cx="50%" cy="50%" r="8" />
                 </svg>
-                <span class="feedback-form__radio-control-mark"></span>
-                <label class="feedback-form__label-radio" for="imp-ntr">Затрудняюсь ответить</label>
+                <span class="feedback-form__radio-control-mark"></span>Затрудняюсь ответить
+                </label>
               </div>
 
             </fieldset>
           </div>
 
           <div class="feedback-form__fieldset-wrapper feedback-form__fieldset-wrapper--full-width">
-            <fieldset class="feedback-form__fieldset">
-              <legend class="feedback-form__fieldset-legend">Посещенные достопримечательности:</legend>
+            <fieldset class="feedback-form__fieldset feedback-form__fieldset--checkbox">
+              <legend class="feedback-form__fieldset-legend feedback-form__fieldset-legend--decore">Посещенные достопримечательности:</legend>
 
               <div class="feedback-form__checkbox-wrapper">
                 <input class="visually-hidden feedback-form__checkbox-input" type="checkbox" name="showplaces" id="devil-bridge" value="devil-bridge" checked>
-                <svg class="feedback-form__checkbox-checked-mark" viewBox="0 0 22 16">
-                  <path d="M21.8053 1.30662L20.759 0.22188C20.4736 -0.0739599 19.9029 -0.0739599 19.6176 0.22188L8.29884 11.9569L2.40167 5.84283C2.11633 5.54699 1.54563 5.54699 1.26028 5.84283L0.21401 6.92758C-0.0713367 7.22342 -0.0713367 7.8151 0.21401 8.11094L7.63303 15.8028C7.82326 16 8.01349 16 8.20373 16C8.39396 16 8.58419 15.9014 8.77442 15.8028L21.615 2.48999C22.0906 2.19415 22.0906 1.70108 21.8053 1.30662Z" />
-                </svg>
-                <span class="feedback-form__checkbox-control-mark"></span>
-                <label class="feedback-form__label-checkbox" for="devil-bridge">Мост Дьявола</label>
+                <label class="feedback-form__label-checkbox" for="devil-bridge">
+                  <svg class="feedback-form__checkbox-checked-mark" viewBox="0 0 22 16">
+                    <path d="M21.8053 1.30662L20.759 0.22188C20.4736 -0.0739599 19.9029 -0.0739599 19.6176 0.22188L8.29884 11.9569L2.40167 5.84283C2.11633 5.54699 1.54563 5.54699 1.26028 5.84283L0.21401 6.92758C-0.0713367 7.22342 -0.0713367 7.8151 0.21401 8.11094L7.63303 15.8028C7.82326 16 8.01349 16 8.20373 16C8.39396 16 8.58419 15.9014 8.77442 15.8028L21.615 2.48999C22.0906 2.19415 22.0906 1.70108 21.8053 1.30662Z" />
+                  </svg>
+                  <span class="feedback-form__checkbox-control-mark"></span>Мост Дьявола
+                </label>
               </div>
 
               <div class="feedback-form__checkbox-wrapper">
                 <input class="visually-hidden feedback-form__checkbox-input" type="checkbox" name="showplaces" id="bell-mount" value="bell-mountain" checked>
-                <svg class="feedback-form__checkbox-checked-mark" viewBox="0 0 22 16">
-                  <path d="M21.8053 1.30662L20.759 0.22188C20.4736 -0.0739599 19.9029 -0.0739599 19.6176 0.22188L8.29884 11.9569L2.40167 5.84283C2.11633 5.54699 1.54563 5.54699 1.26028 5.84283L0.21401 6.92758C-0.0713367 7.22342 -0.0713367 7.8151 0.21401 8.11094L7.63303 15.8028C7.82326 16 8.01349 16 8.20373 16C8.39396 16 8.58419 15.9014 8.77442 15.8028L21.615 2.48999C22.0906 2.19415 22.0906 1.70108 21.8053 1.30662Z" />
-                </svg>
-                <span class="feedback-form__checkbox-control-mark"></span>
-                <label class="feedback-form__label-checkbox" for="bell-mount">Гора-Колокол</label>
+                <label class="feedback-form__label-checkbox" for="bell-mount">
+                  <svg class="feedback-form__checkbox-checked-mark" viewBox="0 0 22 16">
+                    <path d="M21.8053 1.30662L20.759 0.22188C20.4736 -0.0739599 19.9029 -0.0739599 19.6176 0.22188L8.29884 11.9569L2.40167 5.84283C2.11633 5.54699 1.54563 5.54699 1.26028 5.84283L0.21401 6.92758C-0.0713367 7.22342 -0.0713367 7.8151 0.21401 8.11094L7.63303 15.8028C7.82326 16 8.01349 16 8.20373 16C8.39396 16 8.58419 15.9014 8.77442 15.8028L21.615 2.48999C22.0906 2.19415 22.0906 1.70108 21.8053 1.30662Z" />
+                  </svg>
+                  <span class="feedback-form__checkbox-control-mark"></span>Гора-Колокол
+                </label>
               </div>
 
               <div class="feedback-form__checkbox-wrapper">
                 <input class="visually-hidden feedback-form__checkbox-input" type="checkbox" name="showplaces" id="slide" value="slide-park" checked>
-                <svg class="feedback-form__checkbox-checked-mark" viewBox="0 0 22 16">
-                  <path d="M21.8053 1.30662L20.759 0.22188C20.4736 -0.0739599 19.9029 -0.0739599 19.6176 0.22188L8.29884 11.9569L2.40167 5.84283C2.11633 5.54699 1.54563 5.54699 1.26028 5.84283L0.21401 6.92758C-0.0713367 7.22342 -0.0713367 7.8151 0.21401 8.11094L7.63303 15.8028C7.82326 16 8.01349 16 8.20373 16C8.39396 16 8.58419 15.9014 8.77442 15.8028L21.615 2.48999C22.0906 2.19415 22.0906 1.70108 21.8053 1.30662Z" />
-                </svg>
-                <span class="feedback-form__checkbox-control-mark"></span>
-                <label class="feedback-form__label-checkbox" for="slide">Слайд-парк</label>
+                <label class="feedback-form__label-checkbox" for="slide">
+                  <svg class="feedback-form__checkbox-checked-mark" viewBox="0 0 22 16">
+                    <path d="M21.8053 1.30662L20.759 0.22188C20.4736 -0.0739599 19.9029 -0.0739599 19.6176 0.22188L8.29884 11.9569L2.40167 5.84283C2.11633 5.54699 1.54563 5.54699 1.26028 5.84283L0.21401 6.92758C-0.0713367 7.22342 -0.0713367 7.8151 0.21401 8.11094L7.63303 15.8028C7.82326 16 8.01349 16 8.20373 16C8.39396 16 8.58419 15.9014 8.77442 15.8028L21.615 2.48999C22.0906 2.19415 22.0906 1.70108 21.8053 1.30662Z" />
+                  </svg>
+                  <span class="feedback-form__checkbox-control-mark"></span>Слайд-парк
+                </label>
               </div>
 
               <div class="feedback-form__checkbox-wrapper">
                 <input class="visually-hidden feedback-form__checkbox-input" type="checkbox" name="showplaces" id="red-rocks" value="red-rocks">
-                <svg class="feedback-form__checkbox-checked-mark" viewBox="0 0 22 16">
-                  <path d="M21.8053 1.30662L20.759 0.22188C20.4736 -0.0739599 19.9029 -0.0739599 19.6176 0.22188L8.29884 11.9569L2.40167 5.84283C2.11633 5.54699 1.54563 5.54699 1.26028 5.84283L0.21401 6.92758C-0.0713367 7.22342 -0.0713367 7.8151 0.21401 8.11094L7.63303 15.8028C7.82326 16 8.01349 16 8.20373 16C8.39396 16 8.58419 15.9014 8.77442 15.8028L21.615 2.48999C22.0906 2.19415 22.0906 1.70108 21.8053 1.30662Z" />
-                </svg>
-                <span class="feedback-form__checkbox-control-mark"></span>
-                <label class="feedback-form__label-checkbox" for="red-rocks">Красные скалы</label>
+                <label class="feedback-form__label-checkbox" for="red-rocks">
+                  <svg class="feedback-form__checkbox-checked-mark" viewBox="0 0 22 16">
+                    <path d="M21.8053 1.30662L20.759 0.22188C20.4736 -0.0739599 19.9029 -0.0739599 19.6176 0.22188L8.29884 11.9569L2.40167 5.84283C2.11633 5.54699 1.54563 5.54699 1.26028 5.84283L0.21401 6.92758C-0.0713367 7.22342 -0.0713367 7.8151 0.21401 8.11094L7.63303 15.8028C7.82326 16 8.01349 16 8.20373 16C8.39396 16 8.58419 15.9014 8.77442 15.8028L21.615 2.48999C22.0906 2.19415 22.0906 1.70108 21.8053 1.30662Z" />
+                  </svg>
+                  <span class="feedback-form__checkbox-control-mark"></span>Красные скалы
+                </label>
               </div>
 
             </fieldset>
@@ -200,7 +217,7 @@
 
           <div class="feedback-form__fieldset-wrapper feedback-form__fieldset-wrapper--full-width">
             <fieldset class="feedback-form__fieldset">
-              <legend class="feedback-form__fieldset-legend">Опишите свои эмоции:</legend>
+              <legend class="feedback-form__fieldset-legend feedback-form__fieldset-legend--decore">Опишите свои эмоции:</legend>
 
               <textarea class="feedback-form__textarea-input" name="emotions" id="emo" placeholder="Опишите подробно все свои восторги"></textarea>
             </fieldset>
@@ -258,6 +275,8 @@
       </div>
     </footer>
 
+
+    <!-- класс modal-container--open открываает модальное окно -->
     <div class="modal-container">
 
       <div class="modal-error">

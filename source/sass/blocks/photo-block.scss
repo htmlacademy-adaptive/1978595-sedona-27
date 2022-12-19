@@ -7,6 +7,10 @@
   border-top: 1px solid #e5e5e5;
 }
 
+.photo-block__info-wrapper {
+  margin-top: 15px;
+}
+
 .photo-block__heading {
   margin: 0;
   font-family: "PT Sans", sans-serif;
@@ -31,6 +35,21 @@
   line-height: 21px;
 }
 
+.photo-block__likes-wrapper {
+  display: flex;
+  flex-direction: row;
+  margin-top: 17px;
+  gap: 14px;
+}
+
+.photo-block__likes-button {
+  width: 23px;
+  height: 21px;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  padding: 0;
+}
+
 .photo-block__likes-count {
   margin: 0;
   font-family: "PT Sans", sans-serif;
@@ -39,7 +58,13 @@
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
-  padding-bottom: 25px;
+  padding-top: 3px;
+  padding-bottom: 22px;
+}
+
+.photo-block__like-icon {
+  fill: #000000;
+  opacity: 0.3;
 }
 
 
@@ -125,5 +150,10 @@
 
   .photo-block__likes-count {
     color: $white;
+  }
+
+  .photo-block__like-icon {
+    fill: #ffffff;
+    opacity: 1;
   }
 }

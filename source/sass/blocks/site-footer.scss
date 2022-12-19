@@ -1,10 +1,11 @@
 .site-footer {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   width: 320px;
   min-height: 233px;
+  margin-top: 4px;
 }
 
 .site-footer__hashtag-link {
@@ -59,7 +60,7 @@
     justify-content: space-around;
     width: 768px;
     min-height: 120px;
-    margin-top: 40px;
+    margin-top: 0;
   }
 }
 
@@ -69,6 +70,6 @@
     justify-content: space-around;
     width: 1200px;
     min-height: 120px;
-    margin-top: 40px;
+    margin-top: 0;
   }
 }

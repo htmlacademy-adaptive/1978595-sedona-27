@@ -9,7 +9,7 @@
 
 .main-navigation__toggle {
   position: absolute;
-  right: 16px;
+  right: 21px;
   top: 17px;
   z-index: 7;
 }
@@ -21,8 +21,21 @@
   display: none;
 }
 
+.main-navigation__navigation-menu--no-js {
+  position: static;
+  display: block;
+}
+
+.main-navigation__navigation-menu--no-js ~ .main-navigation__toggle {
+  display: none;
+}
+
 .main-navigation__navigation-menu--open {
   display: block;
+}
+
+.main-navigation__navigation-menu--open .navigation-menu__item--logo {
+  display: none;
 }
 
 .main-navigation__logo--outer {
@@ -50,6 +63,10 @@
   .main-navigation__logo--outer {
     display: none;
   }
+
+  .main-navigation__navigation-menu--open .navigation-menu__item--logo {
+    display: block;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -69,5 +86,9 @@
 
   .main-navigation__logo--outer {
     display: none;
+  }
+
+  .main-navigation__navigation-menu--open .navigation-menu__item--logo {
+    display: block;
   }
 }

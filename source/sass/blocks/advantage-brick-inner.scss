@@ -1,12 +1,50 @@
 .advantage-brick-inner {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: center;
   align-items: flex-start;
   text-align: left;
-  min-width: 240px;
-  margin: 0 auto;
+  width: 237px;
   background-color: $white;
+  position: relative;
+  margin: 0 0 0 59px;
+}
+
+.advantage-brick-inner__text-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 237px;
+  min-height: 92px;
+}
+
+.advantage-brick-inner::before {
+  content: "";
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: absolute;
+  left: -41px;
+  top: 0;
+}
+
+.advantage-brick-inner--decore-house::before {
+  content: "";
+  background-image: url("../img/decore/house.svg");
+}
+
+.advantage-brick-inner--decore-burger::before {
+  content: "";
+  background-image: url("../img/decore/burger.svg");
+}
+
+.advantage-brick-inner--decore-present::before {
+  content: "";
+  background-image: url("../img/decore/present.svg");
 }
 
 .advantage-brick-inner__heading {
@@ -16,6 +54,7 @@
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
+  margin: 8px;
 }
 
 .advantage-brick-inner__description {
@@ -26,6 +65,8 @@
   line-height: 21px;
   text-transform: uppercase;
   color: $dark-brown;
+  margin: 0;
+  padding-left: 5px;
 }
 
 @media (min-width: 768px) and (max-width: 1279px) {
@@ -33,10 +74,32 @@
     min-width: 185px;
     min-height: 113px;
     margin: 0 auto;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .advantage-brick-inner__text-wrapper {
+    text-align: center;
+    width: 190px;
+    min-height: 114px;
+  }
+
+  .advantage-brick-inner::before {
+    content: "";
+    width: 77px;
+    height: 72px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: static;
   }
 
   .advantage-brick-inner__heading {
     font-size: 21px;
+  }
+
+  .advantage-brick-inner__description {
+    text-align: center;
   }
 }
 
@@ -45,9 +108,31 @@
     min-width: 282px;
     min-height: 92px;
     margin: 0 auto;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .advantage-brick-inner__text-wrapper {
+    text-align: center;
+    width: 300px;
+    min-height: 93px;
+  }
+
+  .advantage-brick-inner::before {
+    content: "";
+    width: 77px;
+    height: 72px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: static;
   }
 
   .advantage-brick-inner__heading {
     font-size: 21px;
+  }
+
+  .advantage-brick-inner__description {
+    text-align: center;
   }
 }

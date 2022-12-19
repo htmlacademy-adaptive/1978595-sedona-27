@@ -4,6 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/favicon-32.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="images/favicons/favicon-152.svg" type="image/svg+xml">
+    <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
@@ -17,20 +21,9 @@
           </a>
         </div>
 
-        <button class="main-navigation__toggle menu-toggle">
-          <span class="visually-hidden">Открыть меню</span>
-          <svg class="menu-toggle__burger" width="23" height="22" aria-hidden="true">
-            <rect width="23" height="4" x="0" y="0" fill="#81B3D2" />
-            <rect width="23" height="4" x="0" y="9" fill="#81B3D2" />
-            <rect width="23" height="4" x="0" y="18" fill="#81B3D2" />
-          </svg>
-          <svg class="menu-toggle__cross" width="23" height="22" aria-hidden="true">
-            <line x1="1" y1="1" x2="22" y2="21" stroke="#ffffff" stroke-width="3" />
-            <line x1="1" y1="21" x2="22" y2="1" stroke="#ffffff" stroke-width="3" />
-          </svg>
-        </button>
 
-        <div class="main-navigation__navigation-menu navigation-menu">
+        <!-- меню с js открывается добавлением класса main-navigation__navigation-menu--open -->
+        <div class="main-navigation__navigation-menu main-navigation__navigation-menu--no-js navigation-menu ">
           <ul class="navigation-menu__list">
             <li class="navigation-menu__item navigation-menu__item">
               <a class="navigation-menu__link" href="index.html">Главная</a>
@@ -51,6 +44,23 @@
             </li>
           </ul>
         </div>
+
+        <button class="main-navigation__toggle menu-toggle">
+          <span class="visually-hidden">Открыть меню</span>
+
+          <!-- класс menu-toggle__burger--invisible скрывает иконку-бургер -->
+          <svg class="menu-toggle__burger" width="23" height="22" aria-hidden="true">
+            <rect width="23" height="4" x="0" y="0" fill="#81B3D2" />
+            <rect width="23" height="4" x="0" y="9" fill="#81B3D2" />
+            <rect width="23" height="4" x="0" y="18" fill="#81B3D2" />
+          </svg>
+
+          <!-- класс menu-toggle__cross--visible делает видимым иконку-крест-->
+          <svg class="menu-toggle__cross" width="23" height="22" aria-hidden="true">
+            <line x1="1" y1="1" x2="22" y2="21" stroke="#ffffff" stroke-width="3" />
+            <line x1="1" y1="21" x2="22" y2="1" stroke="#ffffff" stroke-width="3" />
+          </svg>
+        </button>
       </nav>
     </header>
 
@@ -80,7 +90,15 @@
                 <h3 class="photo-block__heading">Неродные просторы</h3>
                 <p class="photo-block__author">Автор фото: Борис</p>
               </div>
-              <p class="photo-block__likes-count">1350</p>
+              <div class="photo-block__likes-wrapper">
+                <button class="photo-block__likes-button">
+                  <span class="visually-hidden">Поставить лайк</span>
+                  <svg class="photo-block__like-icon" width="23" height="21" viewBox="0 0 23 21"  xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" />
+                    </svg>
+                </button>
+                <p class="photo-block__likes-count">1350</p>
+              </div>
             </div>
           </div>
 
@@ -92,7 +110,15 @@
                 <h3 class="photo-block__heading">Местная растительность</h3>
                 <p class="photo-block__author">Автор фото: Сергей</p>
               </div>
-              <p class="photo-block__likes-count">143</p>
+              <div class="photo-block__likes-wrapper">
+                <button class="photo-block__likes-button">
+                  <span class="visually-hidden">Поставить лайк</span>
+                  <svg class="photo-block__like-icon" width="23" height="21" viewBox="0 0 23 21"  xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" />
+                    </svg>
+                </button>
+                <p class="photo-block__likes-count">143</p>
+              </div>
             </div>
           </div>
 
@@ -104,7 +130,15 @@
                 <h3 class="photo-block__heading">Дорога на север</h3>
                 <p class="photo-block__author">Автор фото: Пётр</p>
               </div>
-              <p class="photo-block__likes-count">96</p>
+              <div class="photo-block__likes-wrapper">
+                <button class="photo-block__likes-button">
+                  <span class="visually-hidden">Поставить лайк</span>
+                  <svg class="photo-block__like-icon" width="23" height="21" viewBox="0 0 23 21"  xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" />
+                    </svg>
+                </button>
+                <p class="photo-block__likes-count">96</p>
+              </div>
             </div>
           </div>
 
@@ -116,7 +150,15 @@
                 <h3 class="photo-block__heading">Мост Дьявола</h3>
                 <p class="photo-block__author">Автор фото: Антон</p>
               </div>
-              <p class="photo-block__likes-count">254</p>
+              <div class="photo-block__likes-wrapper">
+                <button class="photo-block__likes-button">
+                  <span class="visually-hidden">Поставить лайк</span>
+                  <svg class="photo-block__like-icon" width="23" height="21" viewBox="0 0 23 21"  xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" />
+                    </svg>
+                </button>
+                <p class="photo-block__likes-count">254</p>
+              </div>
             </div>
           </div>
 
@@ -128,7 +170,18 @@
             <h3 class="visually-hidden">Видеопрезентация Седоны</h3>
             <p class="video-block__heading">Все еще сомневаетесь?</p>
             <p class="video-block__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-            <img class="video-block__video" src="img/video-mobile.jpg" alt="Дорога на седону" width="280" height="177">
+
+            <div class="video-block__wrapper">
+              <picture>
+                <source media="(min-width: 1280px)" srcset="img/video-desktop.jpg 1x, img/video-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px) and (max-width: 1279px)" srcset="img/video-tablet.jpg 1x, img/video-tablet@2x.jpg 2x">
+                <img class="video-block__video" src="img/video-mobile.jpg" alt="Дорога на седону" width="280" height="177" srcset="img/video-mobile@2x.jpg 2x">
+              </picture>
+              <svg class="video-block__play-icon" width="48" height="54" viewBox="0 0 48 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M48 27L0 54L2.42273e-06 0L48 27Z" fill="white" fill-opacity="0.7"/>
+              </svg>
+            </div>
+
           </div>
         </div>
       </section>

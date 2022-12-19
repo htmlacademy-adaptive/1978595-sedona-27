@@ -4,6 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/favicon-32.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="images/favicons/favicon-152.svg" type="image/svg+xml">
+    <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
@@ -18,20 +22,9 @@
           </a>
         </div>
 
-        <button class="main-navigation__toggle menu-toggle">
-          <span class="visually-hidden">Открыть меню</span>
-          <svg class="menu-toggle__burger" width="23" height="22" aria-hidden="true">
-            <rect width="23" height="4" x="0" y="0" fill="#81B3D2" />
-            <rect width="23" height="4" x="0" y="9" fill="#81B3D2" />
-            <rect width="23" height="4" x="0" y="18" fill="#81B3D2" />
-          </svg>
-          <svg class="menu-toggle__cross" width="23" height="22" aria-hidden="true">
-            <line x1="1" y1="1" x2="22" y2="21" stroke="#ffffff" stroke-width="3" />
-            <line x1="1" y1="21" x2="22" y2="1" stroke="#ffffff" stroke-width="3" />
-          </svg>
-        </button>
 
-        <div class="main-navigation__navigation-menu navigation-menu">
+        <!-- меню с js открывается добавлением класса main-navigation__navigation-menu--open -->
+        <div class="main-navigation__navigation-menu main-navigation__navigation-menu--no-js navigation-menu ">
           <ul class="navigation-menu__list">
             <li class="navigation-menu__item navigation-menu__item">
               <a class="navigation-menu__link navigation-menu__link--current" href="index.html">Главная</a>
@@ -52,6 +45,25 @@
             </li>
           </ul>
         </div>
+
+
+        <button class="main-navigation__toggle menu-toggle">
+          <span class="visually-hidden">Открыть меню</span>
+
+          <!-- класс menu-toggle__burger--invisible скрывает иконку-бургер -->
+          <svg class="menu-toggle__burger" width="23" height="22" aria-hidden="true">
+            <rect width="23" height="4" x="0" y="0" fill="#81B3D2" />
+            <rect width="23" height="4" x="0" y="9" fill="#81B3D2" />
+            <rect width="23" height="4" x="0" y="18" fill="#81B3D2" />
+          </svg>
+
+          <!-- класс menu-toggle__cross--visible делает видимым иконку-крест-->
+          <svg class="menu-toggle__cross" width="23" height="22" aria-hidden="true">
+            <line x1="1" y1="1" x2="22" y2="21" stroke="#ffffff" stroke-width="3" />
+            <line x1="1" y1="21" x2="22" y2="1" stroke="#ffffff" stroke-width="3" />
+          </svg>
+        </button>
+
       </nav>
     </header>
 
@@ -65,7 +77,7 @@
       </section>
 
       <section class="index-main__heading heading-block heading-block--index">
-        <h2 class="heading-block__head">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+        <h2 class="heading-block__head heading-block__head--index">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
         <p class="heading-block__heading-text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       </section>
 
@@ -77,7 +89,7 @@
           <ul class="advantages-block__list">
 
             <li class="advantages-block__item advantages-block__item--blue-background">
-              <div class="advantages-block__brick advantage-brick advantage-brick--white-text">
+              <div class="advantages-block__brick advantage-brick advantage-brick--first advantage-brick--white-text">
                 <h3 class="advantage-brick__heading">Настоящий городок</h3>
                 <p class="advantage-brick__number">— №1 —</p>
                 <p class="advantage-brick__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
@@ -92,40 +104,44 @@
             <li class="advantages-block__item advantages-block__item--inner">
               <ul class="advantages-block-inner">
                 <li class="advantages-block-inner__item">
-                  <div class="advantages-block-inner__brick advantage-brick-inner">
-                    <h4 class="advantage-brick-inner__heading">Жильё</h4>
-                    <p class="advantage-brick-inner__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                  <div class="advantages-block-inner__brick advantage-brick-inner advantage-brick-inner--decore-house">
+                    <div class="advantage-brick-inner__text-wrapper">
+                      <h4 class="advantage-brick-inner__heading">Жильё</h4>
+                      <p class="advantage-brick-inner__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                    </div>
                   </div>
                 </li>
                 <li class="advantages-block-inner__item">
-                  <div class="advantages-block-inner__brick advantage-brick-inner">
-                    <h4 class="advantage-brick-inner__heading">Еда</h4>
-                    <p class="advantage-brick-inner__description">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
+                  <div class="advantages-block-inner__brick advantage-brick-inner advantage-brick-inner--decore-burger">
+                    <div class="advantage-brick-inner__text-wrapper">
+                      <h4 class="advantage-brick-inner__heading">Еда</h4>
+                      <p class="advantage-brick-inner__description">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
+                    </div>
                   </div>
                 </li>
                 <li class="advantages-block-inner__item">
-                  <div class="advantages-block-inner__brick advantage-brick-inner">
-                    <h4 class="advantage-brick-inner__heading">Сувениры</h4>
-                    <p class="advantage-brick-inner__description">Не только китайского, но и местного производства!</p>
+                  <div class="advantages-block-inner__brick advantage-brick-inner advantage-brick-inner--decore-present">
+                    <div class="advantage-brick-inner__text-wrapper">
+                      <h4 class="advantage-brick-inner__heading">Сувениры</h4>
+                      <p class="advantage-brick-inner__description">Не только китайского, но и местного производства!</p>
+                    </div>
                   </div>
                 </li>
               </ul>
             </li>
-            <li class="advantages-block__item advantages-block__item--image-2">
-              <div class="advantage-brick--image">
-                <img src="img/photo-devil-bridge.jpg" alt="Фотография моста Дьявола." width="320" height="260">
-              </div>
-            </li>
-            <li class="advantages-block__item advantages-block__item--blue-background">
-              <div class="advantages-block__brick advantage-brick advantage-brick--white-text">
+            <li class="advantages-block__item advantages-block__item--blue-background advantages-block__item--order-2">
+              <div class="advantages-block__brick advantage-brick advantage-brick--white-text advantage-brick--blue">
                 <h3 class="advantage-brick__heading"> Там есть мост Дьявола</h3>
                 <p class="advantage-brick__number">— №2 —</p>
                 <p class="advantage-brick__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
               </div>
             </li>
-
-
-            <li class="advantages-block__item">
+            <li class="advantages-block__item advantages-block__item--image-2 advantages-block__item--order-1">
+              <div class="advantage-brick--image">
+                <img src="img/photo-devil-bridge.jpg" alt="Фотография моста Дьявола." width="320" height="260">
+              </div>
+            </li>
+            <li class="advantages-block__item advantages-block__item--order-2">
               <div class="advantages-block__brick advantage-brick">
                 <h3 class="advantage-brick__heading">Небольшая площадь</h3>
                 <p class="advantage-brick__number">— №3 —</p>
@@ -133,15 +149,15 @@
               </div>
             </li>
 
-            <li class="advantages-block__item">
-              <div class="advantages-block__brick advantage-brick">
+            <li class="advantages-block__item advantages-block__item--order-2">
+              <div class="advantages-block__brick advantage-brick advantage-brick--borders">
                 <h3 class="advantage-brick__heading">Красивая дорога</h3>
                 <p class="advantage-brick__number">— №4 —</p>
                 <p class="advantage-brick__description">Ехать в седону из Лас-Вегаса совсем не скучно!</p>
               </div>
             </li>
 
-            <li class="advantages-block__item">
+            <li class="advantages-block__item advantages-block__item--order-2">
               <div class="advantages-block__brick advantage-brick">
                 <h3 class="advantage-brick__heading">Мало туристов</h3>
                 <p class="advantage-brick__number">— №5 —</p>
