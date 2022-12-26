@@ -24,6 +24,7 @@
 .photo-block__image {
   padding-top: 24px;
   order: -2;
+  display: block;
 }
 
 .photo-block__author {
@@ -86,12 +87,24 @@
     min-height: 480px;
   }
 
+  .photo-block__image {
+    width: 324px;
+    height: 267px;
+    padding: 0;
+  }
+
+  .photo-block:first-of-type .photo-block__image {
+    width: 648px;
+    height: 400px;
+  }
+
   .photo-block__info-wrapper {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     min-height: 80px;
+    margin-top: 0;
   }
 
   .photo-block:nth-child(even) .photo-block__info-wrapper {
@@ -125,6 +138,17 @@
     min-height: 400px;
   }
 
+  .photo-block__image {
+    width: 400px;
+    height: 267px;
+    padding: 0;
+  }
+
+  .photo-block:first-of-type .photo-block__image {
+    width: 1200px;
+    height: 400px;
+  }
+
   .photo-block__info-wrapper {
     width: 100%;
     display: flex;
@@ -134,10 +158,6 @@
     position: absolute;
     bottom: 0;
     background-color: $black-op3;
-  }
-
-  .photo-block__image {
-    padding: 0;
   }
 
   .photo-block__heading {
