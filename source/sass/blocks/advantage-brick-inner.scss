@@ -72,26 +72,28 @@
 @media (min-width: 768px) and (max-width: 1279px) {
   .advantage-brick-inner {
     min-width: 185px;
-    min-height: 113px;
-    margin: 0 auto;
+    margin: auto;
     align-items: center;
     flex-direction: column;
+    position: relative;
   }
 
   .advantage-brick-inner__text-wrapper {
     text-align: center;
     width: 190px;
-    min-height: 114px;
+    gap: 14px;
   }
 
   .advantage-brick-inner::before {
     content: "";
-    width: 77px;
-    height: 72px;
+    width: 82px;
+    height: 75px;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    position: static;
+    position: relative;
+    top: -15px;
+    left: 1px;
   }
 
   .advantage-brick-inner__heading {
@@ -100,14 +102,15 @@
 
   .advantage-brick-inner__description {
     text-align: center;
+    width: 181px;
+
   }
 }
 
 @media (min-width: 1280px) {
   .advantage-brick-inner {
-    min-width: 282px;
-    min-height: 92px;
-    margin: 0 auto;
+    min-width: 315px;
+    margin: auto;
     align-items: center;
     flex-direction: column;
   }
@@ -116,16 +119,19 @@
     text-align: center;
     width: 300px;
     min-height: 93px;
+    margin-top: 21px;
   }
 
   .advantage-brick-inner::before {
     content: "";
-    width: 77px;
+    width: 82px;
     height: 72px;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    position: static;
+    position: relative;
+    top: -2px;
+    left: -3px;
   }
 
   .advantage-brick-inner__heading {
@@ -134,5 +140,6 @@
 
   .advantage-brick-inner__description {
     text-align: center;
+    width: 288px;
   }
 }
