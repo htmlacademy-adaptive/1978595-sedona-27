@@ -1,5 +1,5 @@
 .advantage-brick {
-  width: 289px;
+  width: 257px;
   padding-top: 24px;
   padding-bottom: 24px;
   display: flex;
@@ -10,13 +10,14 @@
   margin: 0 auto;
 }
 
-.advantage-brick--first {
-  padding-top: 57px;
-}
-
 .advantage-brick--blue {
   padding-top: 41px;
   padding-bottom: 31px;
+  width: 263px;
+}
+
+.advantage-brick--first {
+  padding-top: 57px;
 }
 
 .advantage-brick--borders::after {
@@ -99,8 +100,17 @@
   .advantage-brick {
     width: 192px;
     min-height: 172px;
+    padding-top: 52px;
+    justify-content: start;
   }
 
+  .advantage-brick--first {
+    padding-top: 0;
+  }
+
+  .advantage-brick--blue {
+    padding-top: 53px;
+  }
   .advantage-brick__image {
     display: block;
     width: 512px;
@@ -115,6 +125,17 @@
 
   .advantage-brick__heading {
     font-size: 21px;
+    width: 150px;
+  }
+
+  .advantage-brick__number {
+    margin-bottom: 17px;
+  }
+
+  .advantage-brick__description {
+    line-height: 21px;
+    padding-top: 6px;
+    width: 195px;
   }
 
   .advantage-brick--borders::after {
