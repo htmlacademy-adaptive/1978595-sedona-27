@@ -1,9 +1,14 @@
 .banner-small {
-  background-image: url("../img/back-desktop.jpg");
+  background-image: url("../img/backgrounds/back-mobile-small.jpg");
   background-color: $black;
-  background-position: center bottom;
-  background-size: 902px;
+  //background-position: center bottom;
+  background-size: 320px 214px;
   position: relative;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/backgrounds/back-mobile-small@2x.jpg");
+    background-size: 320px 214px;
+  }
 }
 
 .banner-small__img {
@@ -24,7 +29,13 @@
 
 @media (min-width: 768px) and (max-width: 1279px) {
   .banner-small {
-    background-size: auto auto;
+    background-size: 768px 290px;
+    background-image: url("../img/backgrounds/back-tablet-small.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/backgrounds/back-tablet-small@2x.jpg");
+      background-size: 768px 290px;
+    }
   }
 
   .banner-small__img {
@@ -36,8 +47,14 @@
 
 @media (min-width: 1280px) {
   .banner-small {
-    background-size: auto auto;
     margin-bottom: 114px;
+    background-size: 1200px 301px;
+    background-image: url("../img/backgrounds/back-desktop-small.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/backgrounds/back-desktop-small@2x.jpg");
+      background-size: 1200px 301px;
+    }
   }
 
   .banner-small__img {
