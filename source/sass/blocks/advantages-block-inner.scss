@@ -22,6 +22,7 @@
   .advantages-block-inner {
     min-height: 330px;
     min-width: 256px;
+    gap: 0;
     display: flex;
     flex-direction: row;
     justify-content: stretch;
@@ -40,6 +41,7 @@
     flex-direction: row;
     justify-content: stretch;
     margin: 0;
+    gap: 0;
   }
 
   .advantages-block-inner__item {

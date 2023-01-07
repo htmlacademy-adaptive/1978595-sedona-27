@@ -33,6 +33,7 @@
   }
 
   .advantages-block__item {
+    display: flex;
     min-width: 256px;
     min-height: 256px;
   }
@@ -43,7 +44,6 @@
 
 
   .advantages-block__item--inner {
-    width: 100;
     min-height: 331px;
   }
 
@@ -70,6 +70,7 @@
 
 
   .advantages-block__item {
+    display: flex;
     min-width: 400px;
     min-height: 256px;
   }

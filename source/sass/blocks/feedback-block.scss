@@ -1,9 +1,11 @@
 @media (min-width: 768px) and (max-width: 1279px) {
   .feedback-block {
-    margin-top: 99px;
+    margin-top: 32px;
   }
 }
 
-// @media (min-width: 1280px) {
-
-// }
+@media (min-width: 1280px) {
+  .feedback-block {
+    margin-top: 32px;
+  }
+}
