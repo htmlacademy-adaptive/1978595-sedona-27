@@ -69,10 +69,19 @@
   padding-left: 5px;
 }
 
+.advantage-brick-inner__description-br-burger {
+  display: none;
+}
+
+.advantage-brick-inner__description-br-souvenirs {
+  display: none;
+}
+
 @media (min-width: 768px) and (max-width: 1279px) {
   .advantage-brick-inner {
     min-width: 185px;
     margin: auto;
+    margin-top: 75px;
     align-items: center;
     flex-direction: column;
     position: relative;
@@ -103,7 +112,10 @@
   .advantage-brick-inner__description {
     text-align: center;
     width: 181px;
+  }
 
+  .advantage-brick-inner__description-br-burger {
+    display: inline;
   }
 }
 
@@ -141,5 +153,9 @@
   .advantage-brick-inner__description {
     text-align: center;
     width: 288px;
+  }
+
+  .advantage-brick-inner__description-br-souvenirs {
+    display: inline;
   }
 }

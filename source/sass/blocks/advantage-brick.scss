@@ -100,6 +100,10 @@
   height: 260px;
 }
 
+.advantage-brick__description-br-devil-bridge {
+  display: none;
+}
+
 @media (min-width: 768px) and (max-width: 1279px) {
   .advantage-brick {
     width: 192px;
@@ -201,5 +205,13 @@
 
   .advantage-brick--borders::before {
     display: none;
+  }
+
+  .advantage-brick__description-br-devil-bridge {
+    display: inline;
+  }
+
+  .advantage-brick__description-br {
+    display: inline;
   }
 }

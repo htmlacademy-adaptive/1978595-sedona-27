@@ -54,6 +54,19 @@
   background-color: $blue;
 }
 
+.search-invite__link:hover {
+  background-color: #669cc0;
+}
+
+.search-invite__link:active {
+  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.search-invite__link:disabled {
+  background-color: #e5e5e5;
+}
+
 
 @media (min-width: 768px) and (max-width: 1279px) {
   .search-invite {

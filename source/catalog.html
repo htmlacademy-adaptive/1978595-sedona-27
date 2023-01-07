@@ -70,9 +70,9 @@
         <img class="banner-small__img" src="img/sedona-banner-small.svg" alt="Баннер Седоны." width="229" height="39">
       </section>
 
-      <section class="catalog-main__heading heading-block">
+      <section class="catalog-main__heading heading-block heading-block--catalog">
         <h2 class="heading-block__head">Фото и видео</h2>
-        <p class="heading-block__heading-text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+        <p class="heading-block__heading-text heading-block__heading-text--catalog">Не можете решиться на путешествие из-за курса? <br class="heading-block__heading-text--catalog-br">Фотографии помогут вам забыть о политике и экономике.</p>
       </section>
 
       <section class="catalog-main__photo-video photo-video-block">
@@ -81,13 +81,15 @@
         <div class="photo-video-block__photo-gallery photo-gallery">
 
           <div class="photo-video-block__photo photo-block">
-            <picture>
-              <source media="(min-width: 1280px)" srcset="img/gallery/photo-1-desktop@1x.jpg 1x, img/gallery/photo-1-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px) and (max-width: 1279px)" srcset="img/gallery/photo-1-tablet@1x.jpg 1x, img/gallery/photo-1-tablet@2x.jpg 2x">
-              <img class="photo-block__image" src="img/gallery/photo-1-mobile@1x.jpg" alt="Дорога на фоне аризонской природы" width="280" height="280" srcset="img/gallery/photo-1-mobile@2x.jpg 2x">
-            </picture>
+            <a class="photo-block__link" href="#">
+              <picture>
+                <source media="(min-width: 1280px)" srcset="img/gallery/photo-1-desktop@1x.jpg 1x, img/gallery/photo-1-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px) and (max-width: 1279px)" srcset="img/gallery/photo-1-tablet@1x.jpg 1x, img/gallery/ photo-1-tablet@2x.jpg 2x">
+                <img class="photo-block__image" src="img/gallery/photo-1-mobile@1x.jpg" alt="Дорога на фоне аризонской природы" width="280"   height="280" srcset="img/gallery/photo-1-mobile@2x.jpg 2x">
+              </picture>
+            </a>
             <div class="photo-block__info-wrapper">
-              <div class="photo-block__head-wrapper">
+              <div class="photo-block__head-wrapper photo-block__head-wrapper--first">
                 <h3 class="photo-block__heading">Неродные просторы</h3>
                 <p class="photo-block__author">Автор фото: Борис</p>
               </div>
@@ -104,12 +106,13 @@
           </div>
 
           <div class="photo-video-block__photo photo-block">
-
-            <picture>
-              <source media="(min-width: 1280px)" srcset="img/gallery/photo-2-desktop@1x.jpg 1x, img/gallery/photo-2-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px) and (max-width: 1279px)" srcset="img/gallery/photo-2-tablet@1x.jpg 1x, img/gallery/photo-2-tablet@2x.jpg 2x">
-              <img class="photo-block__image" src="img/gallery/photo-2-mobile@1x.jpg" alt="Аризонский кактус" width="280" height="280" srcset="img/gallery/photo-2-mobile@2x.jpg 2x">
-            </picture>
+            <a class="photo-block__link" href="#">
+              <picture>
+                <source media="(min-width: 1280px)" srcset="img/gallery/photo-2-desktop@1x.jpg 1x, img/gallery/photo-2-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px) and (max-width: 1279px)" srcset="img/gallery/photo-2-tablet@1x.jpg 1x, img/gallery/ photo-2-tablet@2x.jpg 2x">
+                <img class="photo-block__image" src="img/gallery/photo-2-mobile@1x.jpg" alt="Аризонский кактус" width="280" height="280"  srcset="img/gallery/photo-2-mobile@2x.jpg 2x">
+              </picture>
+            </a>
             <div class="photo-block__info-wrapper">
               <div class="photo-block__head-wrapper">
                 <h3 class="photo-block__heading">Местная растительность</h3>
@@ -128,12 +131,13 @@
           </div>
 
           <div class="photo-video-block__photo photo-block">
-
-            <picture>
-              <source media="(min-width: 1280px)" srcset="img/gallery/photo-3-desktop@1x.jpg 1x, img/gallery/photo-3-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px) and (max-width: 1279px)" srcset="img/gallery/photo-3-tablet@1x.jpg 1x, img/gallery/photo-3-tablet@2x.jpg 2x">
-              <img class="photo-block__image" src="img/gallery/photo-3-mobile@1x.jpg" alt="Дорога на фоне зеленого леса" width="280" height="280" srcset="img/gallery/photo-3-mobile@2x.jpg 2x">
-            </picture>
+            <a class="photo-block__link" href="#">
+              <picture>
+                <source media="(min-width: 1280px)" srcset="img/gallery/photo-3-desktop@1x.jpg 1x, img/gallery/photo-3-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px) and (max-width: 1279px)" srcset="img/gallery/photo-3-tablet@1x.jpg 1x, img/gallery/ photo-3-tablet@2x.jpg 2x">
+                <img class="photo-block__image" src="img/gallery/photo-3-mobile@1x.jpg" alt="Дорога на фоне зеленого леса" width="280"  height="280" srcset="img/gallery/photo-3-mobile@2x.jpg 2x">
+              </picture>
+            </a>
             <div class="photo-block__info-wrapper">
               <div class="photo-block__head-wrapper">
                 <h3 class="photo-block__heading">Дорога на север</h3>
@@ -152,12 +156,13 @@
           </div>
 
           <div class="photo-video-block__photo photo-block">
-
-            <picture>
-              <source media="(min-width: 1280px)" srcset="img/gallery/photo-4-desktop@1x.jpg 1x, img/gallery/photo-4-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px) and (max-width: 1279px)" srcset="img/gallery/photo-4-tablet@1x.jpg 1x, img/gallery/photo-4-tablet@2x.jpg 2x">
-              <img class="photo-block__image" src="img/gallery/photo-4-mobile@1x.jpg" alt="Мост дьявола" width="280" height="280" srcset="img/gallery/photo-4-mobile@2x.jpg 2x">
-            </picture>
+            <a class="photo-block__link" href="#">
+              <picture>
+                <source media="(min-width: 1280px)" srcset="img/gallery/photo-4-desktop@1x.jpg 1x, img/gallery/photo-4-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px) and (max-width: 1279px)" srcset="img/gallery/photo-4-tablet@1x.jpg 1x, img/gallery/ photo-4-tablet@2x.jpg 2x">
+                <img class="photo-block__image" src="img/gallery/photo-4-mobile@1x.jpg" alt="Мост дьявола" width="280" height="280"   srcset="img/gallery/photo-4-mobile@2x.jpg 2x">
+              </picture>
+            </a>
             <div class="photo-block__info-wrapper">
               <div class="photo-block__head-wrapper">
                 <h3 class="photo-block__heading">Мост Дьявола</h3>
