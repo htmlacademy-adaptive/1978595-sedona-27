@@ -1,5 +1,5 @@
 .advantage-brick {
-  width: 289px;
+  width: 257px;
   padding-top: 24px;
   padding-bottom: 24px;
   display: flex;
@@ -10,13 +10,14 @@
   margin: 0 auto;
 }
 
-.advantage-brick--first {
-  padding-top: 57px;
-}
-
 .advantage-brick--blue {
   padding-top: 41px;
   padding-bottom: 31px;
+  width: 263px;
+}
+
+.advantage-brick--first {
+  padding-top: 57px;
 }
 
 .advantage-brick--borders::after {
@@ -71,6 +72,10 @@
   margin: 0;
 }
 
+.advantage-brick__description-br {
+  display: none;
+}
+
 .advantage-brick--white-text {
   color: $white;
 }
@@ -95,10 +100,24 @@
   height: 260px;
 }
 
+.advantage-brick__description-br-devil-bridge {
+  display: none;
+}
+
 @media (min-width: 768px) and (max-width: 1279px) {
   .advantage-brick {
     width: 192px;
-    min-height: 172px;
+    padding: 0;
+    margin: auto;
+    justify-content: start;
+  }
+
+  .advantage-brick--first {
+    padding-top: 0;
+  }
+
+  .advantage-brick--blue {
+    padding-top: 22px;
   }
 
   .advantage-brick__image {
@@ -115,6 +134,21 @@
 
   .advantage-brick__heading {
     font-size: 21px;
+    width: 150px;
+  }
+
+  .advantage-brick__number {
+    margin-bottom: 17px;
+  }
+
+  .advantage-brick__description {
+    line-height: 21px;
+    padding-top: 6px;
+    width: 195px;
+  }
+
+  .advantage-brick__description-br {
+    display: inline;
   }
 
   .advantage-brick--borders::after {
@@ -130,6 +164,12 @@
   .advantage-brick {
     width: 295px;
     min-height: 153px;
+    margin: auto;
+    padding: 0;
+  }
+
+  .advantage-brick--special-margin {
+    margin-top: 63px;
   }
 
   .advantage-brick__image {
@@ -146,6 +186,18 @@
 
   .advantage-brick__heading {
     font-size: 21px;
+    width: 150px;
+    margin: 0;
+  }
+
+  .advantage-brick__number {
+    margin-bottom: 0;
+  }
+
+  .advantage-brick__description {
+    line-height: 21px;
+    padding-top: 6px;
+    width: 284px;
   }
 
   .advantage-brick--borders::after {
@@ -154,5 +206,13 @@
 
   .advantage-brick--borders::before {
     display: none;
+  }
+
+  .advantage-brick__description-br-devil-bridge {
+    display: inline;
+  }
+
+  .advantage-brick__description-br {
+    display: inline;
   }
 }
