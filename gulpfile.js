@@ -187,8 +187,3 @@ export const startDev = gulp.series(styles, server, watcher);
 export default gulp.series(
   build, serverBuild, watcherBuild
 );
-
-
-
-
-
