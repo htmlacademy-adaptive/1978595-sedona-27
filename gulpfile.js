@@ -4,8 +4,10 @@ import sass from 'gulp-dart-sass';
 import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
-//import webp from 'gulp-webp';
 import squoosh from 'gulp-libsquoosh';
+import svgSprite from 'gulp-svg-sprite';
+import { stacksvg } from "gulp-stacksvg";
+
 
 // Styles
 
@@ -41,8 +43,9 @@ const watcher = () => {
   gulp.watch('source/*.html').on('change', browser.reload);
 }
 
-export const createWebp = (done) => {
-  function webptask(wherefrom) {
+//Webp
+
+function webptask(wherefrom) {
 
   return gulp.src(`${wherefrom}*.{jpg,png}`)
   .pipe(squoosh({
@@ -50,10 +53,26 @@ export const createWebp = (done) => {
     }))
     .pipe(gulp.dest(`${wherefrom}/webp`))
   }
+
+export const createWebp = (done) => {
   webptask('source/img/advantages/');
   webptask('source/img/gallery/');
   webptask('source/img/video/');
   done();
+}
+
+//SVG Sprite
+
+export const createSvgStack = () => {
+  return gulp.src('source/img/decore/background/*.svg')
+  .pipe (stacksvg({output: 'decore-backgrounds-stack.svg'}))
+  .pipe (gulp.dest('source/img/decore'))
+}
+
+export const createSvgSprite = () => {
+  return gulp.src('source/img/decore/inline/*.svg')
+  .pipe (svgSprite({mode: {symbol: {sprite: 'decore-symbol-sprite.svg', dest: '.'}}, sgv: {dimensionAttributes: true}}))
+  .pipe (gulp.dest('source/img/decore'))
 }
 
 

@@ -125,18 +125,20 @@
   width: 58px;
   height: 60px;
   background-color: #e6e6e6;
-  background-image: url("../img/decore/phone.svg");
+  background-image: url("../img/decore/decore-backgrounds-stack.svg#phone");
   background-position: center center;
   background-repeat: no-repeat;
+  background-size: 18px 18px;
 }
 
 .feedback-form__text-input--email + .feedback-form__text-input-decore {
   width: 58px;
   height: 60px;
   background-color: #e6e6e6;
-  background-image: url("../img/decore/mail.svg");
+  background-image: url("../img/decore/decore-backgrounds-stack.svg#mail");
   background-position: center center;
   background-repeat: no-repeat;
+  background-size: 18px 18px;
 }
 
 .feedback-form__label {

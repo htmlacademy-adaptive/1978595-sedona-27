@@ -19,11 +19,12 @@
 .banner-small::after {
   content: " ";
   position: absolute;
-  background-image: url("../img/decore/banner-flange.svg");
+  background-image: url("../img/decore/decore-backgrounds-stack.svg#banner-flange");
   background-position: center;
   width: 100%;
   height: 57px;
   bottom: 0;
+  background-size: 1200px 57px;
 }
 
 @media (min-width: 768px) and (max-width: 1279px) {
