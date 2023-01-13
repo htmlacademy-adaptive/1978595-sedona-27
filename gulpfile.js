@@ -4,6 +4,8 @@ import sass from 'gulp-dart-sass';
 import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
+//import webp from 'gulp-webp';
+import squoosh from 'gulp-libsquoosh';
 
 // Styles
 
@@ -37,6 +39,20 @@ const server = (done) => {
 const watcher = () => {
   gulp.watch('source/sass/**/*.scss', gulp.series(styles));
   gulp.watch('source/*.html').on('change', browser.reload);
+}
+
+export const createWebp = (done) => {
+  function webptask(wherefrom) {
+
+  return gulp.src(`${wherefrom}*.{jpg,png}`)
+  .pipe(squoosh({
+    webp: {}
+    }))
+    .pipe(gulp.dest(`${wherefrom}/webp`))
+  }
+  webptask('source/img/advantages/');
+  webptask('source/img/gallery/');
+  done();
 }
 
 
