@@ -151,10 +151,6 @@ export const clean = () => {
     cssMin,
     scripts,
     copy
-    );
-
-export default gulp.series(
-  styles, server, watcher
 );
 
 // Server for build
@@ -170,3 +166,29 @@ export const serverBuild = (done) => {
   });
   done();
 }
+
+// Reload
+
+const reload = (done) => {
+  browser.reload();
+  done();
+  }
+
+  // Watcher for Build
+
+  const watcherBuild = () => {
+  gulp.watch('source/sass/**/*.scss', gulp.series(styles, cssMin, reload));
+  gulp.watch('source/js/script.js', gulp.series(scripts, reload));
+  gulp.watch('source/*.html', gulp.series(htmlmin, reload));
+  }
+
+export const startDev = gulp.series(styles, server, watcher);
+
+export default gulp.series(
+  build, serverBuild, watcherBuild
+);
+
+
+
+
+
