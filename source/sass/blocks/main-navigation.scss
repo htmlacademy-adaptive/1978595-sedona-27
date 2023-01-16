@@ -36,6 +36,15 @@
   display: block;
 }
 
+.main-navigation__navigation-menu--no-js .navigation-menu__item{
+  display: block;
+}
+
+.main-navigation__navigation-menu--no-js .navigation-menu__item--logo{
+  display: block;
+  min-height: 100px;
+}
+
 .main-navigation__navigation-menu--no-js ~ .main-navigation__toggle {
   display: none;
 }
@@ -76,6 +85,12 @@
 
   .main-navigation__navigation-menu .navigation-menu__item--logo {
     order: 0;
+    height: 56px;
+  }
+
+  .main-navigation__navigation-menu--no-js .navigation-menu__item--logo {
+    order: 0;
+    min-height: 56px;
   }
 }
 
@@ -100,5 +115,11 @@
 
   .main-navigation__navigation-menu .navigation-menu__item--logo {
     order: 0;
+    height: 56px;
+  }
+
+  .main-navigation__navigation-menu--no-js .navigation-menu__item--logo {
+    order: 0;
+    min-height: 56px;
   }
 }
