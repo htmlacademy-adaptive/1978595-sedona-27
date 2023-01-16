@@ -18,6 +18,7 @@
     "gulp-stacksvg": "^2.0.0",
     "gulp-svg-sprite": "^2.0.1",
     "gulp-svgmin": "^4.1.0",
+    "gulp-terser": "^2.1.0",
     "gulp-webp": "^4.0.1",
     "postcss": "8.3.11",
     "stylelint": "13.13.1",

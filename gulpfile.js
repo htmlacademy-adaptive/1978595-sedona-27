@@ -11,6 +11,7 @@ import htmlmin from 'gulp-htmlmin';
 import svgmin from 'gulp-svgmin';
 import cssmin from 'gulp-cssmin';
 import {deleteAsync} from 'del';
+import terser from 'gulp-terser';
 
 
 // Styles
@@ -113,6 +114,7 @@ export const cssMin = (done) => {
 
 export const scripts = () => {
   return gulp.src(['source/js/*.js','!source/js/*--debug*'])
+  .pipe(terser())
   .pipe(gulp.dest('build/js'))
   }
 
