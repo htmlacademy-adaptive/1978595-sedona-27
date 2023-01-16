@@ -6,11 +6,11 @@
 }
 
 .advantages-block__item {
-  background-color: $grey;
+  background-color: #eeeeee;
 }
 
 .advantages-block__item--inner {
-  background-color: $white;
+  background-color: #ffffff;
 }
 
 .advantages-block__item:first-of-type {
@@ -18,7 +18,7 @@
 }
 
 .advantages-block__item--blue-background {
-  background-color: $blue;
+  background-color: #81b3d2;
 }
 
 @media (min-width: 768px) and (max-width: 1279px) {

@@ -14,8 +14,8 @@
   box-sizing: border-box;
   width: 320px;
   min-height: 55px;
-  background-color: $blue;
-  font-family: "PT Sans", Arial, sans-serif;
+  background-color: #81b3d2;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -23,7 +23,7 @@
   align-items: center;
   text-align: center;
   text-transform: uppercase;
-  color: $white;
+  color: #ffffff;
   box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
 }
 
@@ -47,7 +47,7 @@
 }
 
 .navigation-menu__link {
-  color: $white;
+  color: #ffffff;
   display: block;
   width: 320px;
   padding-bottom: 12px;
@@ -56,12 +56,12 @@
 }
 
 .navigation-menu__link:hover {
-  color: $white;
+  color: #ffffff;
   background-color: #669ec0;
 }
 
 .navigation-menu__link:active {
-  color: $white;
+  color: #ffffff;
   opacity: 0.3;
   background-color: #5496bd;
 }
@@ -69,6 +69,7 @@
 .navigation-menu__item--logo {
   background-color: #ffffff;
   order: -1;
+  box-shadow: none;
 }
 
 
@@ -86,7 +87,7 @@
     border: none;
     box-shadow: none;
     width: 153px;
-    background-color: $white;
+    background-color: #ffffff;
   }
 
   .navigation-menu__item:last-child::after {
@@ -109,31 +110,31 @@
   }
 
   .navigation-menu__link {
-    font-family: "PT Sans", Arial, sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 21px;
     text-transform: uppercase;
-    color: $black;
+    color: #000000;
     box-sizing: border-box;
     width: auto;
     height: auto;
   }
 
   .navigation-menu__link:hover {
-    color: $blue;
-    background-color: $white;
+    color: #81b3d2;
+    background-color: #ffffff;
   }
 
   .navigation-menu__link:active {
-    color: $black;
+    color: #000000;
     opacity: 0.3;
-    background-color: $white;
+    background-color: #ffffff;
   }
 
   .navigation-menu__link--current {
-    color: $brown;
+    color: #766357;
   }
 
   .navigation-menu__logo-inner {
@@ -161,7 +162,7 @@
     border: none;
     box-shadow: none;
     width: 240px;
-    background-color: $white;
+    background-color: #ffffff;
   }
 
   .navigation-menu__item:first-child {
@@ -180,31 +181,31 @@
   }
 
   .navigation-menu__link {
-    font-family: "PT Sans", Arial, sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 21px;
     text-transform: uppercase;
-    color: $black;
+    color: #000000;
     box-sizing: border-box;
     width: auto;
     height: auto;
   }
 
   .navigation-menu__link:hover {
-    color: $blue;
-    background-color: $white;
+    color: #81b3d2;
+    background-color: #ffffff;
   }
 
   .navigation-menu__link:active {
-    color: $black;
+    color: #000000;
     opacity: 0.3;
-    background-color: $white;
+    background-color: #ffffff;
   }
 
   .navigation-menu__link--current {
-    color: $brown;
+    color: #766357;
   }
 
   .navigation-menu__logo-inner {

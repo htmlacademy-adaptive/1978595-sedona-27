@@ -14,7 +14,7 @@
 }
 
 .site-footer__hashtag-link {
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 21px;
@@ -22,18 +22,18 @@
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
-  color: $black;
+  color: #000000;
 }
 
 .site-footer__developer-link {
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
   text-decoration: none;
-  color: $black;
+  color: #000000;
 }
 
 .site-footer__developer-link:hover {

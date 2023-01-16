@@ -11,7 +11,7 @@
   padding: 0;
   margin: 0;
   padding-bottom: 19px;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 21px;
@@ -22,13 +22,13 @@
 .search-invite__description {
   margin: 0;
   padding: 0 30px 32px 30px;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
-  color: $dark-brown;
+  color: #333333;
   text-align: center;
   width: 285px;
 }
@@ -41,7 +41,7 @@
   width: 284px;
   height: 58px;
   padding-top: 16px;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 21px;
@@ -49,9 +49,9 @@
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
-  color: $white;
+  color: #ffffff;
   box-sizing: border-box;
-  background-color: $blue;
+  background-color: #81b3d2;
 }
 
 .search-invite__link:hover {
