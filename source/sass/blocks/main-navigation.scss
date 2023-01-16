@@ -19,7 +19,6 @@
   position: absolute;
   top: 0;
   display: block;
-
 }
 
 .main-navigation__navigation-menu .navigation-menu__item {
@@ -36,11 +35,11 @@
   display: block;
 }
 
-.main-navigation__navigation-menu--no-js .navigation-menu__item{
+.main-navigation__navigation-menu--no-js .navigation-menu__item {
   display: block;
 }
 
-.main-navigation__navigation-menu--no-js .navigation-menu__item--logo{
+.main-navigation__navigation-menu--no-js .navigation-menu__item--logo {
   display: block;
   min-height: 100px;
 }
@@ -49,7 +48,7 @@
   display: none;
 }
 
-.main-navigation__navigation-menu--open .navigation-menu__item{
+.main-navigation__navigation-menu--open .navigation-menu__item {
   display: block;
 }
 
