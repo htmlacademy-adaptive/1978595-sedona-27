@@ -146,6 +146,11 @@
     left: -3px;
   }
 
+  .advantage-brick-inner--decore-present::before {
+    content: "";
+    background-image: url("../img/decore/decore-backgrounds-stack.svg#present-desktop");
+  }
+
   .advantage-brick-inner__heading {
     font-size: 21px;
   }
