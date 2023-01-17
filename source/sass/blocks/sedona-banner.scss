@@ -1,6 +1,6 @@
 .sedona-banner {
   background-image: url("../img/backgrounds/back-mobile.jpg");
-  background-color: $black;
+  background-color: #000000;
   background-position: center bottom;
   position: relative;
 
@@ -21,17 +21,18 @@
 .sedona-banner::after {
   content: " ";
   position: absolute;
-  background-image: url("../img/decore/banner-flange.svg");
+  background-image: url("../img/decore/decore-backgrounds-stack.svg#banner-flange");
   background-position: center;
   width: 100%;
   height: 57px;
   bottom: 0;
+  background-size: 1200px 57px;
 }
 
 @media (min-width: 768px) and (max-width: 1279px) {
   .sedona-banner {
     background-image: url("../img/backgrounds/back-tablet.jpg");
-    background-color: $black;
+    background-color: #000000;
     background-position: center bottom;
 
     @media (min-resolution: 2dppx) {
@@ -51,7 +52,7 @@
 @media (min-width: 1280px) {
   .sedona-banner {
     background-image: url("../img/backgrounds/back-desktop.jpg");
-    background-color: $black;
+    background-color: #000000;
     background-position: center bottom;
 
     @media (min-resolution: 2dppx) {

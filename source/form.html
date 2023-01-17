@@ -9,18 +9,14 @@
     <link rel="apple-touch-icon" href="images/favicons/favicon-152.svg" type="image/svg+xml">
     <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" href="fonts/ptsans.woff" as="font">
+    <link rel="preload" href="fonts/ptsans.woff2" as="font">
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
+    <link rel="preload" href="fonts/ptsansbold.woff" as="font">
   </head>
   <body class="page__body">
     <header class="page__header site-header">
       <nav class="main-navigation">
-
-        <!-- Этот логотип для мобильной версии -->
-        <div class="main-navigation__logo main-navigation__logo--outer">
-          <a href="index.html">
-            <img class="logo-img" src="img/sedona-logo.svg" width="185" height="96" alt="Логотип отеля Седона." >
-          </a>
-        </div>
-
 
         <!-- меню с js открывается добавлением класса main-navigation__navigation-menu--open -->
         <div class="main-navigation__navigation-menu main-navigation__navigation-menu--no-js navigation-menu ">
@@ -32,7 +28,7 @@
               <a class="navigation-menu__link" href="catalog.html">Фото и видео</a>
             </li>
             <li class="navigation-menu__item navigation-menu__item--logo">
-              <a class="main-navigation__logo navigation-menu__logo--inner" href="index.html">
+              <a class="main-navigation__logo navigation-menu__logo" href="index.html">
                 <img src="img/sedona-logo.svg" width="185" height="96" alt="Логотип отеля Седона." class="logo-img">
               </a>
             </li>
@@ -50,12 +46,12 @@
 
           <!--класс menu-toggle__burger--invisible скрывает иконку-бургер -->
           <svg class="menu-toggle__burger" width="23" height="22" aria-hidden="true">
-            <use xlink:href="img/decore/decore-sprite.svg#menu-toggle__burger"></use>
+            <use xlink:href="img/decore/decore-symbol-sprite.svg#menu-toggle__burger"></use>
           </svg>
 
           <!--класс menu-toggle__cross--visible делает видимым иконку-крест-->
           <svg class="menu-toggle__cross" width="23" height="22" aria-hidden="true">
-            <use xlink:href="img/decore/decore-sprite.svg#menu-toggle__cross"></use>
+            <use xlink:href="img/decore/decore-symbol-sprite.svg#menu-toggle__cross"></use>
           </svg>
         </button>
       </nav>
@@ -136,7 +132,7 @@
 
                 <input class="visually-hidden feedback-form__radio-input" type="radio" name="impression" id="imp-pos" value="positive">
                 <label class="feedback-form__label-radio" for="imp-pos">
-                <svg class="feedback-form__radio-checked-mark" viewBox="0 0 16 16">
+                <svg class="feedback-form__radio-checked-mark" width="16" height="16" viewBox="0 0 16 16">
                   <circle cx="50%" cy="50%" r="8" />
                 </svg>
                 <span class="feedback-form__radio-control-mark"></span>Скорее положительное
@@ -146,7 +142,7 @@
               <div class="feedback-form__radio-wrapper">
                 <input class="visually-hidden feedback-form__radio-input" type="radio" name="impression" id="imp-neg" value="negative">
                 <label class="feedback-form__label-radio" for="imp-neg">
-                <svg class="feedback-form__radio-checked-mark" viewBox="0 0 16 16">
+                <svg class="feedback-form__radio-checked-mark" width="16" height="16" viewBox="0 0 16 16">
                   <circle cx="50%" cy="50%" r="8" />
                 </svg>
                 <span class="feedback-form__radio-control-mark"></span>Скорее отрицательное</label>
@@ -155,7 +151,7 @@
               <div class="feedback-form__radio-wrapper">
                 <input class="visually-hidden feedback-form__radio-input" type="radio" name="impression" id="imp-ntr" value="neutral">
                 <label class="feedback-form__label-radio" for="imp-ntr">
-                <svg class="feedback-form__radio-checked-mark" viewBox="0 0 16 16">
+                <svg class="feedback-form__radio-checked-mark" width="16" height="16" viewBox="0 0 16 16">
                   <circle cx="50%" cy="50%" r="8" />
                 </svg>
                 <span class="feedback-form__radio-control-mark"></span>Затрудняюсь ответить
@@ -172,8 +168,8 @@
               <div class="feedback-form__checkbox-wrapper">
                 <input class="visually-hidden feedback-form__checkbox-input" type="checkbox" name="showplaces" id="devil-bridge" value="devil-bridge" checked>
                 <label class="feedback-form__label-checkbox" for="devil-bridge">
-                  <svg class="feedback-form__checkbox-checked-mark" viewBox="0 0 22 16">
-                    <use xlink:href="img/decore/decore-sprite.svg#checkbox-checked-mark"></use>
+                  <svg class="feedback-form__checkbox-checked-mark" width="22" height="16" viewBox="0 0 22 16">
+                    <use xlink:href="img/decore/decore-symbol-sprite.svg#checkbox-checked-mark"></use>
                   </svg>
                   <span class="feedback-form__checkbox-control-mark"></span>Мост Дьявола
                 </label>
@@ -182,8 +178,8 @@
               <div class="feedback-form__checkbox-wrapper">
                 <input class="visually-hidden feedback-form__checkbox-input" type="checkbox" name="showplaces" id="bell-mount" value="bell-mountain" checked>
                 <label class="feedback-form__label-checkbox" for="bell-mount">
-                  <svg class="feedback-form__checkbox-checked-mark" viewBox="0 0 22 16">
-                    <use xlink:href="img/decore/decore-sprite.svg#checkbox-checked-mark"></use>
+                  <svg class="feedback-form__checkbox-checked-mark" width="22" height="16" viewBox="0 0 22 16">
+                    <use xlink:href="img/decore/decore-symbol-sprite.svg#checkbox-checked-mark"></use>
                   </svg>
                   <span class="feedback-form__checkbox-control-mark"></span>Гора-Колокол
                 </label>
@@ -192,8 +188,8 @@
               <div class="feedback-form__checkbox-wrapper">
                 <input class="visually-hidden feedback-form__checkbox-input" type="checkbox" name="showplaces" id="slide" value="slide-park" checked>
                 <label class="feedback-form__label-checkbox" for="slide">
-                  <svg class="feedback-form__checkbox-checked-mark" viewBox="0 0 22 16">
-                    <use xlink:href="img/decore/decore-sprite.svg#checkbox-checked-mark"></use>
+                  <svg class="feedback-form__checkbox-checked-mark" width="22" height="16" viewBox="0 0 22 16">
+                    <use xlink:href="img/decore/decore-symbol-sprite.svg#checkbox-checked-mark"></use>
                   </svg>
                   <span class="feedback-form__checkbox-control-mark"></span>Слайд-парк
                 </label>
@@ -202,8 +198,8 @@
               <div class="feedback-form__checkbox-wrapper">
                 <input class="visually-hidden feedback-form__checkbox-input" type="checkbox" name="showplaces" id="red-rocks" value="red-rocks">
                 <label class="feedback-form__label-checkbox" for="red-rocks">
-                  <svg class="feedback-form__checkbox-checked-mark" viewBox="0 0 22 16">
-                    <use xlink:href="img/decore/decore-sprite.svg#checkbox-checked-mark"></use>
+                  <svg class="feedback-form__checkbox-checked-mark" width="22" height="16" viewBox="0 0 22 16">
+                    <use xlink:href="img/decore/decore-symbol-sprite.svg#checkbox-checked-mark"></use>
                   </svg>
                   <span class="feedback-form__checkbox-control-mark"></span>Красные скалы
                 </label>
@@ -237,26 +233,26 @@
       <div class="site-footer__social-links social-block">
         <ul class="social-block__list">
           <li class="social-block__item">
-            <a href="#" class="social-block__link">
+            <a href="#" class="social-block__link" aria-label="Ссылка на страницу Vkontakte">
               <span class="visually-hidden">Vkontakte</span>
               <svg class="social-block__icon" width="24" height="14" viewBox="0 0 24 14"  xmlns="http://www.w3.org/2000/svg">
-                <use xlink:href="img/decore/decore-sprite.svg#icon-vk"></use>
+                <use xlink:href="img/decore/decore-symbol-sprite.svg#icon-vk"></use>
               </svg>
             </a>
           </li>
           <li class="social-block__item">
-            <a href="#" class="social-block__link">
+            <a href="#" class="social-block__link" aria-label="Ссылка на Telegramm-канал">
               <span class="visually-hidden">Telegram</span>
               <svg class="social-block__icon" width="22" height="18" viewBox="0 0 22 18"  xmlns="http://www.w3.org/2000/svg">
-                <use xlink:href="img/decore/decore-sprite.svg#icon-telegram"></use>
+                <use xlink:href="img/decore/decore-symbol-sprite.svg#icon-telegram"></use>
               </svg>
             </a>
           </li>
           <li class="social-block__item">
-            <a href="#" class="social-block__link">
+            <a href="#" class="social-block__link" aria-label="Ссылка на Youtube-канал">
               <span class="visually-hidden">Youtube</span>
               <svg class="social-block__icon" width="20" height="14" viewBox="0 0 20 14"  xmlns="http://www.w3.org/2000/svg">
-                <use xlink:href="img/decore/decore-sprite.svg#icon-yt"></use>
+                <use xlink:href="img/decore/decore-symbol-sprite.svg#icon-yt"></use>
               </svg>
             </a>
           </li>
@@ -264,9 +260,9 @@
       </div>
 
       <div class="site-footer__developer-link-wrapper">
-        <a class="site-footer__developer-link" href="https://htmlacademy.ru/intensive/adaptive">Разработано
+        <a class="site-footer__developer-link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Ссылка на сайт HTML Academy">Разработано
           <svg class="site-footer__developer-icon" width="27" height="35" viewBox="0 0 27 35" xmlns="http://www.w3.org/2000/svg">
-            <use xlink:href="img/decore/decore-sprite.svg#developer-icon"></use>
+            <use xlink:href="img/decore/decore-symbol-sprite.svg#developer-icon"></use>
           </svg>
         </a>
       </div>
@@ -297,7 +293,7 @@
     </div>
 
   <script src="./js/mob-menu.js"></script>
-  <script src="./js/mod-error-opener.js"></script>
-  <script src="./js/mod-success-opener.js"></script>
+  <!-- <script src="./js/mod-error-opener--debug.js"></script>
+  <script src="./js/mod-success-opener--debug.js"></script> -->
   </body>
 </html>

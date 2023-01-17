@@ -13,7 +13,7 @@
 
 .photo-block__heading {
   margin: 0;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -29,7 +29,7 @@
 
 .photo-block__author {
   margin: 0;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -53,7 +53,7 @@
 
 .photo-block__likes-count {
   margin: 0;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -108,15 +108,15 @@
   }
 
   .photo-block:nth-child(even) .photo-block__info-wrapper {
-    background-color: $dark-white;
+    background-color: #f2f2f2;
   }
 
   .photo-block:nth-child(odd) .photo-block__info-wrapper {
-    background-color: $light-grey;
+    background-color: #eaeaea;
   }
 
   .photo-block:first-child .photo-block__info-wrapper {
-    background-color: $dark-white;
+    background-color: #f2f2f2;
   }
 
   .photo-block__head-wrapper {
@@ -168,7 +168,7 @@
     align-items: center;
     position: absolute;
     bottom: 0;
-    background-color: $black-op3;
+    background-color: rgba(0, 0, 0, 0.3);
     min-height: 80px;
   }
 
@@ -192,16 +192,16 @@
   }
 
   .photo-block__heading {
-    color: $white;
+    color: #ffffff;
     margin-bottom: 5px;
   }
 
   .photo-block__author {
-    color: $white;
+    color: #ffffff;
   }
 
   .photo-block__likes-count {
-    color: $white;
+    color: #ffffff;
   }
 
   .photo-block__like-icon {

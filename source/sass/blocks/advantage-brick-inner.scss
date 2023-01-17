@@ -5,7 +5,7 @@
   align-items: flex-start;
   text-align: left;
   width: 237px;
-  background-color: $white;
+  background-color: #ffffff;
   position: relative;
   margin: 0 0 0 59px;
 }
@@ -34,21 +34,21 @@
 
 .advantage-brick-inner--decore-house::before {
   content: "";
-  background-image: url("../img/decore/house.svg");
+  background-image: url("../img/decore/decore-backgrounds-stack.svg#house");
 }
 
 .advantage-brick-inner--decore-burger::before {
   content: "";
-  background-image: url("../img/decore/burger.svg");
+  background-image: url("../img/decore/decore-backgrounds-stack.svg#burger");
 }
 
 .advantage-brick-inner--decore-present::before {
   content: "";
-  background-image: url("../img/decore/present.svg");
+  background-image: url("../img/decore/decore-backgrounds-stack.svg#present");
 }
 
 .advantage-brick-inner__heading {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -58,13 +58,13 @@
 }
 
 .advantage-brick-inner__description {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
-  color: $dark-brown;
+  color: #333333;
   margin: 0;
   padding-left: 5px;
 }
@@ -146,6 +146,11 @@
     left: -3px;
   }
 
+  .advantage-brick-inner--decore-present::before {
+    content: "";
+    background-image: url("../img/decore/decore-backgrounds-stack.svg#present-desktop");
+  }
+
   .advantage-brick-inner__heading {
     font-size: 21px;
   }
@@ -156,6 +161,10 @@
   }
 
   .advantage-brick-inner__description-br-souvenirs {
+    display: inline;
+  }
+
+  .advantage-brick-inner__description-br-burger {
     display: inline;
   }
 }

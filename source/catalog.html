@@ -9,18 +9,14 @@
     <link rel="apple-touch-icon" href="images/favicons/favicon-152.svg" type="image/svg+xml">
     <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" href="fonts/ptsans.woff" as="font">
+    <link rel="preload" href="fonts/ptsans.woff2" as="font">
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
+    <link rel="preload" href="fonts/ptsansbold.woff" as="font">
   </head>
   <body class="page__body">
     <header class="page__header site-header">
       <nav class="main-navigation">
-
-        <!-- Этот логотип для мобильной версии -->
-        <div class="main-navigation__logo main-navigation__logo--outer">
-          <a href="index.html">
-            <img class="logo-img" src="img/sedona-logo.svg" width="185" height="96" alt="Логотип отеля Седона." >
-          </a>
-        </div>
-
 
         <!-- меню с js открывается добавлением класса main-navigation__navigation-menu--open -->
         <div class="main-navigation__navigation-menu main-navigation__navigation-menu--no-js navigation-menu ">
@@ -32,7 +28,7 @@
               <a class="navigation-menu__link navigation-menu__link--current" href="catalog.html">Фото и видео</a>
             </li>
             <li class="navigation-menu__item navigation-menu__item--logo">
-              <a class="main-navigation__logo navigation-menu__logo--inner" href="index.html">
+              <a class="main-navigation__logo navigation-menu__logo" href="index.html">
                 <img class="logo-img" src="img/sedona-logo.svg" width="185" height="96" alt="Логотип отеля Седона." >
               </a>
             </li>
@@ -50,12 +46,12 @@
 
           <!--класс menu-toggle__burger--invisible скрывает иконку-бургер -->
           <svg class="menu-toggle__burger" width="23" height="22" aria-hidden="true">
-            <use xlink:href="img/decore/decore-sprite.svg#menu-toggle__burger"></use>
+            <use xlink:href="img/decore/decore-symbol-sprite.svg#menu-toggle__burger"></use>
           </svg>
 
           <!--класс menu-toggle__cross--visible делает видимым иконку-крест-->
           <svg class="menu-toggle__cross" width="23" height="22" aria-hidden="true">
-            <use xlink:href="img/decore/decore-sprite.svg#menu-toggle__cross"></use>
+            <use xlink:href="img/decore/decore-symbol-sprite.svg#menu-toggle__cross"></use>
           </svg>
         </button>
       </nav>
@@ -83,8 +79,11 @@
           <div class="photo-video-block__photo photo-block">
             <a class="photo-block__link" href="#">
               <picture>
+                <source type="image/webp" media="(min-width: 768px) and (max-width: 1279px)" srcset="img/gallery/webp/photo-1-tablet@1x.webp 1x, img/gallery/webp/photo-1-tablet@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 1280px)" srcset="img/gallery/webp/photo-1-desktop@1x.webp 1x, img/gallery/webp/photo-1-desktop@2x.webp 2x">
+                <source type="image/webp" srcset="img/gallery/webp/photo-1-mobile@1x.webp 1x, img/gallery/webp/photo-1-mobile@2x.webp 2x">
                 <source media="(min-width: 1280px)" srcset="img/gallery/photo-1-desktop@1x.jpg 1x, img/gallery/photo-1-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px) and (max-width: 1279px)" srcset="img/gallery/photo-1-tablet@1x.jpg 1x, img/gallery/ photo-1-tablet@2x.jpg 2x">
+                <source media="(min-width: 768px) and (max-width: 1279px)" srcset="img/gallery/photo-1-tablet@1x.jpg 1x, img/gallery/photo-1-tablet@2x.jpg 2x">
                 <img class="photo-block__image" src="img/gallery/photo-1-mobile@1x.jpg" alt="Дорога на фоне аризонской природы" width="280"   height="280" srcset="img/gallery/photo-1-mobile@2x.jpg 2x">
               </picture>
             </a>
@@ -97,7 +96,7 @@
                 <button class="photo-block__likes-button">
                   <span class="visually-hidden">Поставить лайк</span>
                   <svg class="photo-block__like-icon" width="23" height="21" viewBox="0 0 23 21"  xmlns="http://www.w3.org/2000/svg">
-                    <use xlink:href="img/decore/decore-sprite.svg#like-icon"></use>
+                    <use xlink:href="img/decore/decore-symbol-sprite.svg#like-icon"></use>
                   </svg>
                 </button>
                 <p class="photo-block__likes-count">1350</p>
@@ -108,8 +107,11 @@
           <div class="photo-video-block__photo photo-block">
             <a class="photo-block__link" href="#">
               <picture>
+                <source type="image/webp" media="(min-width: 768px) and (max-width: 1279px)" srcset="img/gallery/webp/photo-2-tablet@1x.webp 1x, img/gallery/webp/photo-2-tablet@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 1280px)" srcset="img/gallery/webp/photo-2-desktop@1x.webp 1x, img/gallery/webp/photo-2-desktop@2x.webp 2x">
+                <source type="image/webp" srcset="img/gallery/webp/photo-2-mobile@1x.webp 1x, img/gallery/webp/photo-2-mobile@2x.webp 2x">
                 <source media="(min-width: 1280px)" srcset="img/gallery/photo-2-desktop@1x.jpg 1x, img/gallery/photo-2-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px) and (max-width: 1279px)" srcset="img/gallery/photo-2-tablet@1x.jpg 1x, img/gallery/ photo-2-tablet@2x.jpg 2x">
+                <source media="(min-width: 768px) and (max-width: 1279px)" srcset="img/gallery/photo-2-tablet@1x.jpg 1x, img/gallery/photo-2-tablet@2x.jpg 2x">
                 <img class="photo-block__image" src="img/gallery/photo-2-mobile@1x.jpg" alt="Аризонский кактус" width="280" height="280"  srcset="img/gallery/photo-2-mobile@2x.jpg 2x">
               </picture>
             </a>
@@ -122,7 +124,7 @@
                 <button class="photo-block__likes-button">
                   <span class="visually-hidden">Поставить лайк</span>
                   <svg class="photo-block__like-icon" width="23" height="21" viewBox="0 0 23 21"  xmlns="http://www.w3.org/2000/svg">
-                    <use xlink:href="img/decore/decore-sprite.svg#like-icon"></use>
+                    <use xlink:href="img/decore/decore-symbol-sprite.svg#like-icon"></use>
                   </svg>
                 </button>
                 <p class="photo-block__likes-count">143</p>
@@ -133,8 +135,11 @@
           <div class="photo-video-block__photo photo-block">
             <a class="photo-block__link" href="#">
               <picture>
+                <source type="image/webp" media="(min-width: 768px) and (max-width: 1279px)" srcset="img/gallery/webp/photo-3-tablet@1x.webp 1x, img/gallery/webp/photo-3-tablet@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 1280px)" srcset="img/gallery/webp/photo-3-desktop@1x.webp 1x, img/gallery/webp/photo-3-desktop@2x.webp 2x">
+                <source type="image/webp" srcset="img/gallery/webp/photo-3-mobile@1x.webp 1x, img/gallery/webp/photo-3-mobile@2x.webp 2x">
                 <source media="(min-width: 1280px)" srcset="img/gallery/photo-3-desktop@1x.jpg 1x, img/gallery/photo-3-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px) and (max-width: 1279px)" srcset="img/gallery/photo-3-tablet@1x.jpg 1x, img/gallery/ photo-3-tablet@2x.jpg 2x">
+                <source media="(min-width: 768px) and (max-width: 1279px)" srcset="img/gallery/photo-3-tablet@1x.jpg 1x, img/gallery/photo-3-tablet@2x.jpg 2x">
                 <img class="photo-block__image" src="img/gallery/photo-3-mobile@1x.jpg" alt="Дорога на фоне зеленого леса" width="280"  height="280" srcset="img/gallery/photo-3-mobile@2x.jpg 2x">
               </picture>
             </a>
@@ -147,7 +152,7 @@
                 <button class="photo-block__likes-button">
                   <span class="visually-hidden">Поставить лайк</span>
                   <svg class="photo-block__like-icon" width="23" height="21" viewBox="0 0 23 21"  xmlns="http://www.w3.org/2000/svg">
-                    <use xlink:href="img/decore/decore-sprite.svg#like-icon"></use>
+                    <use xlink:href="img/decore/decore-symbol-sprite.svg#like-icon"></use>
                   </svg>
                 </button>
                 <p class="photo-block__likes-count">96</p>
@@ -158,8 +163,11 @@
           <div class="photo-video-block__photo photo-block">
             <a class="photo-block__link" href="#">
               <picture>
+                <source type="image/webp" media="(min-width: 768px) and (max-width: 1279px)" srcset="img/gallery/webp/photo-4-tablet@1x.webp 1x, img/gallery/webp/photo-4-tablet@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 1280px)" srcset="img/gallery/webp/photo-4-desktop@1x.webp 1x, img/gallery/webp/photo-4-desktop@2x.webp 2x">
+                <source type="image/webp" srcset="img/gallery/webp/photo-4-mobile@1x.webp 1x, img/gallery/webp/photo-4-mobile@2x.webp 2x">
                 <source media="(min-width: 1280px)" srcset="img/gallery/photo-4-desktop@1x.jpg 1x, img/gallery/photo-4-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px) and (max-width: 1279px)" srcset="img/gallery/photo-4-tablet@1x.jpg 1x, img/gallery/ photo-4-tablet@2x.jpg 2x">
+                <source media="(min-width: 768px) and (max-width: 1279px)" srcset="img/gallery/photo-4-tablet@1x.jpg 1x, img/gallery/photo-4-tablet@2x.jpg 2x">
                 <img class="photo-block__image" src="img/gallery/photo-4-mobile@1x.jpg" alt="Мост дьявола" width="280" height="280"   srcset="img/gallery/photo-4-mobile@2x.jpg 2x">
               </picture>
             </a>
@@ -172,7 +180,7 @@
                 <button class="photo-block__likes-button">
                   <span class="visually-hidden">Поставить лайк</span>
                   <svg class="photo-block__like-icon" width="23" height="21" viewBox="0 0 23 21"  xmlns="http://www.w3.org/2000/svg">
-                    <use xlink:href="img/decore/decore-sprite.svg#like-icon"></use>
+                    <use xlink:href="img/decore/decore-symbol-sprite.svg#like-icon"></use>
                   </svg>
                 </button>
                 <p class="photo-block__likes-count">254</p>
@@ -191,9 +199,12 @@
 
             <div class="video-block__wrapper">
               <picture>
-                <source media="(min-width: 1280px)" srcset="img/video-desktop.jpg 1x, img/video-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px) and (max-width: 1279px)" srcset="img/video-tablet.jpg 1x, img/video-tablet@2x.jpg 2x">
-                <img class="video-block__video" src="img/video-mobile.jpg" alt="Дорога на седону" width="280" height="177" srcset="img/video-mobile@2x.jpg 2x">
+                <source type="image/webp" media="(min-width: 1280px)" srcset="img/video/webp/video-desktop.webp 1x, img/video/webp/video-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px) and (max-width: 1279px)" srcset="img/video/webp/video-tablet.webp 1x, img/video/webp/video-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/video/webp/video-mobile.webp 1x, img/video/webp/video-mobile@2x.webp 2x">
+                <source media="(min-width: 1280px)" srcset="img/video/video/video-desktop.jpg 1x, img/video/video-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px) and (max-width: 1279px)" srcset="img/video/video-tablet.jpg 1x, img/video/video-tablet@2x.jpg 2x">
+                <img class="video-block__video" src="img/video/video-mobile.jpg" alt="Дорога на седону" width="280" height="177" srcset="img/video/video-mobile@2x.jpg 2x">
               </picture>
               <svg class="video-block__play-icon" width="48" height="54" viewBox="0 0 48 54" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M48 27L0 54L2.42273e-06 0L48 27Z" fill="white" fill-opacity="0.7"/>
@@ -216,36 +227,35 @@
       <div class="site-footer__social-links social-block">
         <ul class="social-block__list">
           <li class="social-block__item">
-            <a href="#" class="social-block__link">
+            <a href="#" class="social-block__link" aria-label="Ссылка на страницу Vkontakte">
               <span class="visually-hidden">Vkontakte</span>
               <svg class="social-block__icon" width="24" height="14" viewBox="0 0 24 14"  xmlns="http://www.w3.org/2000/svg">
-                <use xlink:href="img/decore/decore-sprite.svg#icon-vk"></use>
+                <use xlink:href="img/decore/decore-symbol-sprite.svg#icon-vk"></use>
               </svg>
             </a>
           </li>
           <li class="social-block__item">
-            <a href="#" class="social-block__link">
+            <a href="#" class="social-block__link" aria-label="Ссылка на Telegramm-канал">
               <span class="visually-hidden">Telegram</span>
               <svg class="social-block__icon" width="22" height="18" viewBox="0 0 22 18"  xmlns="http://www.w3.org/2000/svg">
-                <use xlink:href="img/decore/decore-sprite.svg#icon-telegram"></use>
+                <use xlink:href="img/decore/decore-symbol-sprite.svg#icon-telegram"></use>
               </svg>
             </a>
           </li>
           <li class="social-block__item">
-            <a href="#" class="social-block__link">
+            <a href="#" class="social-block__link" aria-label="Ссылка на Youtube-канал">
               <span class="visually-hidden">Youtube</span>
               <svg class="social-block__icon" width="20" height="14" viewBox="0 0 20 14"  xmlns="http://www.w3.org/2000/svg">
-                <use xlink:href="img/decore/decore-sprite.svg#icon-yt"></use>
+                <use xlink:href="img/decore/decore-symbol-sprite.svg#icon-yt"></use>
               </svg>
             </a>
           </li>
         </ul>
       </div>
-
       <div class="site-footer__developer-link-wrapper">
-        <a class="site-footer__developer-link" href="https://htmlacademy.ru/intensive/adaptive">Разработано
+        <a class="site-footer__developer-link" href="https://htmlacademy.ru/intensive/adaptive"  aria-label="Ссылка на сайт HTML Academy">Разработано
           <svg class="site-footer__developer-icon" width="27" height="35" viewBox="0 0 27 35" xmlns="http://www.w3.org/2000/svg">
-            <use xlink:href="img/decore/decore-sprite.svg#developer-icon"></use>
+            <use xlink:href="img/decore/decore-symbol-sprite.svg#developer-icon"></use>
           </svg>
         </a>
       </div>

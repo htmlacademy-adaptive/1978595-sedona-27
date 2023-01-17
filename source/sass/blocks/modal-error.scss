@@ -5,11 +5,11 @@
   flex-direction: column;
   position: relative;
   margin: auto;
-  background-color: $white;
+  background-color: #ffffff;
 }
 
 .modal-error__heading {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -21,14 +21,14 @@
 }
 
 .modal-error__text {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
   text-align: center;
-  color: $dark-brown;
+  color: #333333;
   width: 237px;
   margin: 0 auto 3px auto;
 }
@@ -36,13 +36,13 @@
 .modal-error__button {
   width: 180px;
   min-height: 58px;
-  background: $blue;
-  font-family: "PT Sans", sans-serif;
+  background: #81b3d2;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  color: $white;
+  color: #ffffff;
   border: none;
   text-transform: uppercase;
   margin: 0 auto;
