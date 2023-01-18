@@ -5,6 +5,7 @@
 .social-block__list {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   list-style: none;
   gap: 6px;
   padding: 0;
