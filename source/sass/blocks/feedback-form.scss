@@ -76,7 +76,7 @@
 
 .feedback-form__text-input {
   width: 280px;
-  min-height: 58px;
+  height: 58px;
   background-color: #f2f2f2;
   border: none;
   margin: 0 auto;
@@ -105,6 +105,14 @@
   background-color: #ffffff;
   box-sizing: border-box;
   border: 4px solid #e5e5e5;
+  outline: none;
+}
+
+.feedback-form__text-input:focus {
+  background-color: #ffffff;
+  box-sizing: border-box;
+  border: 4px solid #e5e5e5;
+  outline: none;
 }
 
 .feedback-form__text-input--telephone {
@@ -123,7 +131,7 @@
 
 .feedback-form__text-input--telephone + .feedback-form__text-input-decore {
   width: 58px;
-  height: 60px;
+  height: 58px;
   background-color: #e6e6e6;
   background-image: url("../img/decore/decore-backgrounds-stack.svg#phone");
   background-position: center center;
@@ -133,7 +141,7 @@
 
 .feedback-form__text-input--email + .feedback-form__text-input-decore {
   width: 58px;
-  height: 60px;
+  height: 58px;
   background-color: #e6e6e6;
   background-image: url("../img/decore/decore-backgrounds-stack.svg#mail");
   background-position: center center;

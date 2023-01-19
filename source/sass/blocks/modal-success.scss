@@ -5,7 +5,9 @@
   flex-direction: column;
   position: relative;
   margin: auto;
+  margin-top: 402px;
   background-color: #ffffff;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
 }
 
 .modal-success__heading {
@@ -59,6 +61,8 @@
   .modal-success {
     width: 640px;
     min-height: 347px;
+    margin: auto;
+    margin-top: 162px;
   }
 
   .modal-success__heading {
@@ -89,6 +93,8 @@
   .modal-success {
     width: 640px;
     min-height: 347px;
+    margin: auto;
+    margin-top: 145px;
   }
 
   .modal-success__heading {
