@@ -5,7 +5,9 @@
   flex-direction: column;
   position: relative;
   margin: auto;
+  margin-top: 116px;
   background-color: #ffffff;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
 }
 
 .modal-error__heading {
@@ -54,6 +56,7 @@
   .modal-error {
     width: 400px;
     min-height: 347px;
+    margin-top: 283px;
   }
 
   .modal-error__heading {
@@ -79,6 +82,7 @@
   .modal-error {
     width: 400px;
     min-height: 347px;
+    margin-top: 244px;
   }
 
   .modal-error__heading {
