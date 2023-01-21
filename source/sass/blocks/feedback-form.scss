@@ -106,6 +106,7 @@
   box-sizing: border-box;
   border: 4px solid #e5e5e5;
   outline: none;
+  padding-left: 12px;
 }
 
 .feedback-form__text-input:focus {
@@ -113,6 +114,7 @@
   box-sizing: border-box;
   border: 4px solid #e5e5e5;
   outline: none;
+  padding-left: 12px;
 }
 
 .feedback-form__text-input--telephone {
@@ -181,6 +183,10 @@
   background-color: #e5e5e5;
 }
 
+.feedback-form__radio-input:focus-visible + .feedback-form__label-radio {
+  outline: 2px solid #000000;
+}
+
 .feedback-form__radio-wrapper:active .feedback-form__radio-control-mark {
   background-color: #d5d5d5;
 }
@@ -216,6 +222,10 @@
 
 .feedback-form__checkbox-wrapper:active .feedback-form__checkbox-control-mark {
   background-color: #d5d5d5;
+}
+
+.feedback-form__checkbox-input:focus-visible + .feedback-form__label-checkbox {
+  outline: 2px solid #000000;
 }
 
 .feedback-form__checkbox-wrapper:active .feedback-form__checkbox-checked-mark {

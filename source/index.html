@@ -29,7 +29,7 @@
               <a class="navigation-menu__link" href="catalog.html">Фото и видео</a>
             </li>
             <li class="navigation-menu__item navigation-menu__item--logo">
-              <a class="main-navigation__logo navigation-menu__logo" href="index.html">
+              <a class="main-navigation__logo navigation-menu__logo">
                 <img src="img/sedona-logo.svg" width="185" height="96" alt="Логотип отеля Седона." class="navigation-menu__logo-img">
               </a>
             </li>
@@ -188,7 +188,19 @@
 
       <section class="index-main__map sedona-map">
         <h2 class="visually-hidden">Седона на карте.</h2>
-        <iframe class="sedona-map__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d702961.681824337!2d-111.91801514614673!3d35.06933221724594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1661632191457!5m2!1sru!2sru" width="320" height="350" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe class="sedona-map__google-map sedona-map__google-map--hide" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d702961.681824337!2d-111.91801514614673!3d35.06933221724594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1661632191457!5m2!1sru!2sru" width="320" height="350" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <div class="sedona-map__image-map">
+          <picture>
+            <source type="image/webp" media="(min-width: 768px) and (max-width: 1279px)" srcset="img/map/webp/map-tablet@1x.webp 1x, img/map/ webp/map-tablet@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 1280px)" srcset="img/map/webp/map-desktop@1x.webp 1x, img/map/webp/map-desktop@2x. webp 2x">
+            <source type="image/webp" srcset="img/map/webp/map-mobile@1x.webp 1x, img/map/webp/map-mobile@2x.webp 2x">
+            <source media="(min-width: 1280px)" srcset="img/map/map-desktop@1x.jpg 1x, img/map/map-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px) and (max-width: 1279px)" srcset="img/map/map-tablet@1x.jpg 1x, img/map/map-tablet@2x.jpg 2x">
+            <img class="sedona-map__image" src="img/map/map-mobile@1x.jpg" alt="Карта города Седона с маркером" width="320" height="350"  srcset="img/map/map-mobile@2x.jpg 2x">
+          </picture>
+        </div>
+
       </section>
 
     </main>
@@ -238,5 +250,6 @@
 
 
     <script src="./js/mob-menu.js"></script>
+    <script src="./js/maps.js"></script>
   </body>
 </html>

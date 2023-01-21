@@ -63,6 +63,7 @@ export const createWebp = (done) => {
   webptask('source/img/advantages/');
   webptask('source/img/gallery/');
   webptask('source/img/video/');
+  webptask('source/img/map/');
   done();
 }
 
