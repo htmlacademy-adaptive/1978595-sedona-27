@@ -1,17 +1,70 @@
-.sedona-map__map {
+.sedona-map__google-map {
   border: none;
 }
 
+.sedona-map__google-map--hide {
+  display: none;
+}
+
+.sedona-map__image {
+  border: none;
+  display: block;
+}
+
+.sedona-map__image-map {
+  position: relative;
+}
+
+.sedona-map__image-map--hide {
+  display: none;
+}
+
+.sedona-map__image-map::after {
+  content: "";
+  width: 27px;
+  height: 27px;
+  box-sizing: border-box;
+  background-color: #81b3d3;
+  border: 5px solid #ffffff;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  top: 161px;
+  left: 146px;
+}
+
 @media (min-width: 768px) and (max-width: 1279px) {
-  .sedona-map__map {
+  .sedona-map__google-map {
     width: 768px;
     height: 350px;
+  }
+
+  .sedona-map__image {
+    border: none;
+    width: 768px;
+    height: 350px;
+  }
+
+  .sedona-map__image-map::after {
+    top: 161px;
+    left: 370px;
   }
 }
 
 @media (min-width: 1280px) {
-  .sedona-map__map {
+  .sedona-map__google-map {
     width: 1200px;
     height: 350px;
+  }
+
+  .sedona-map__image {
+    border: none;
+    width: 1200px;
+    height: 350px;
+  }
+
+  .sedona-map__image-map::after {
+    top: 161px;
+    left: 586px;
   }
 }
