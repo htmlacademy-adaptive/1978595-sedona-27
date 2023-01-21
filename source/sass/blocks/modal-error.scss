@@ -5,7 +5,6 @@
   flex-direction: column;
   position: relative;
   margin: auto;
-  margin-top: 116px;
   background-color: #ffffff;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
 }
@@ -19,7 +18,7 @@
   text-align: center;
   text-transform: uppercase;
   width: 237px;
-  margin: 45px auto auto auto;
+  margin: 45px auto 25px auto;
 }
 
 .modal-error__text {
@@ -49,18 +48,17 @@
   text-transform: uppercase;
   margin: 0 auto;
   margin-top: auto;
-  margin-bottom: 25px;
+  margin-bottom: 34px;
 }
 
 @media (min-width: 768px) and (max-width: 1279px) {
   .modal-error {
     width: 400px;
     min-height: 347px;
-    margin-top: 283px;
   }
 
   .modal-error__heading {
-    width: 307px;
+    width: 245px;
     font-size: 30px;
     line-height: 40px;
   }
@@ -70,10 +68,10 @@
   }
 
   .modal-error__button {
-    width: 250px;
+    width: 271px;
     min-height: 58px;
     margin-top: auto;
-    margin-bottom: 49px;
+    margin-bottom: 51px;
     font-size: 21px;
   }
 }
@@ -82,21 +80,21 @@
   .modal-error {
     width: 400px;
     min-height: 347px;
-    margin-top: 244px;
   }
 
   .modal-error__heading {
-    width: 307px;
+    width: 245px;
     font-size: 30px;
     line-height: 40px;
   }
 
   .modal-error__text {
     width: 307px;
+    margin-top: 3px;
   }
 
   .modal-error__button {
-    width: 250px;
+    width: 272px;
     min-height: 58px;
     margin-top: auto;
     margin-bottom: 49px;

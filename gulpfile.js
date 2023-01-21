@@ -181,7 +181,7 @@ const reload = (done) => {
   const watcherBuild = () => {
   gulp.watch('source/sass/**/*.scss', gulp.series(styles, cssMin, reload));
   gulp.watch('source/js/script.js', gulp.series(scripts, reload));
-  gulp.watch('source/*.html', gulp.series(htmlmin, reload));
+  gulp.watch('source/*.html', gulp.series(htmlMin, reload));
   }
 
 export const startDev = gulp.series(styles, server, watcher);
